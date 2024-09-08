@@ -1,2 +1,2 @@
 # Emily 'Quinn' McNamee
-## Repo for MART341 - Web Design Homeowork
+## Repo for MART341 - Web Design Homework
