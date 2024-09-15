@@ -18,6 +18,7 @@
      1. Installed Yiyi Wang's **Markdown Preview Enhanced** *v0.8.14*
      2. Installed **file-icons**
      3. I am currently using teabyii's **Ayu Dark Bordered** *v1.0.5* as my VS code Theme
+     4. By the way, Atom was sunsetted in 2022, not making it compatible with the most recent versions of VS Code
    
         
   - Learning the differences between editing repositories from Github Browser mode and via VS Code
