@@ -1,6 +1,6 @@
 # Work Summary
 
-### This week I went through the online course website watching the videos on what the Internet is and how to use and edit Markdown files using both Github Broswer and through VS Code. 
+### This week I went through the online course website watching the videos on what the Internet is and how to use and edit Markdown files using both Github Browser and through VS Code. 
 
 
   [Click here to go to the subdirectory [assignment-03] ](https://github.com/emily-mcnamee/MART341-WebDesign/tree/main/assignment-03)
