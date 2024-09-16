@@ -26,4 +26,9 @@
    
         
   - Learning the differences between editing repositories from Github Browser mode and via VS Code
-  - First created the README Markdown file within Assignment3, then followed the steps of the tutorial, creating the new project [assignment-03] within my local document folder "Github", then uploading the folder into the root directory of MART341-WebDesign. 
+  - Created the README Markdown file within Assignment3, then followed the steps of the tutorial:
+    1. Created the new project [assignment-03] within my local document folder "Github"
+    2. Created "images" subdirectory, then creating the README.md and response.txt
+    3. Took a screenshot of README.md file, named it SS-Workshop.png. Added Screenshot to "images" subdirectory
+    4. Removed README.md and response.txt from "images" subdirectory
+    5. Uploaded the folder into the root directory of MART341-WebDesign
