@@ -1,11 +1,15 @@
 # Work Summary
 
-#### This week I went through the online course website watching the videos on what the Internet is and how to use and edit Markdown files using both Github Broswer and through VS Code. 
+### This week I went through the online course website watching the videos on what the Internet is and how to use and edit Markdown files using both Github Broswer and through VS Code. 
 
 
-  [Click here to go to the subdirectory assignment-03](https://github.com/emily-mcnamee/MART341-WebDesign/tree/main/assignment-03)
+  [Click here to go to the subdirectory [assignment-03] ](https://github.com/emily-mcnamee/MART341-WebDesign/tree/main/assignment-03)
 
+  #### Subdirectory [assignment-03] has its own folder within the root directory of MART341-WebDesign, making its complete directory **MART341-Webdesign/assignment-03**.
   
+  #### [Assignment3] is located within the subdirectory WebDesignHomework, making its complete directory **MART341-WebDesign/WebDesignHomework/Assignment3**.
+\
+\
   Processes I have practiced and learned this week:
   - Creating lists, both organized and unorganized
   - Creating headings and subheadings
