@@ -1,0 +1,220 @@
+Include these in your webpages:
+
+
+<!--“this document is written in HTML5” -->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- **Important!! -->
+
+            <title> 
+                A title is the only required element for the head to register as HTML
+            </title
+
+        <!-- Define what language your page is using -->
+
+            <html lang="en-US">
+
+        <!--  Define the character set used: -->
+
+            <meta charset="UTF-8">
+
+        <!-- Provide a description of your page: -->
+
+            <meta name="description" content="A short description...">
+
+        <!-- Provide the author information for the page: -->
+
+            <meta name="author" content="Your Name">
+
+        <!-- Other meta elements -->
+            //meta to fit screen to mobile
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            //meta code to link CSS sheet
+
+            <link rel="stylesheet" href="./css/style.css">
+
+            //example of a personal style sheet for the webpage
+
+            <style>
+                b  ody {background-color: snow}
+                h1 {color: purple}
+            </style>  
+
+    </head>
+
+</html>
+
+
+Example of a well-made HTML head tag:
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A short description...">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Way-Cool Awesome Site</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      body {background-color: snow}
+      h1 {color: purple}
+    </style>
+  </head>
+
+    <body>
+        <!-- My “Way-Cool Awesome Site” contents, visible to visitors. -->
+      <h1>This is the Main Heading</h1>
+      <p>This text might be an introduction to the rest of the page. And if the page is a long one it might be split up into several sub-headings.</p>
+      
+      <h2>This is a Sub-Heading</h2>
+      <p>Many long articles have sub-headings so to help you follow the structure of what is being written. There may even be sub-sub-headings (or lower-level headings).</p>
+      
+      <h2>Another Sub-Heading</h2>
+      <p>Here you can see another sub-heading followed by an associated paragraph.</p>    
+
+    //example of a black-quote with semantic markup
+      <blockquote>
+            “Known as <cite>Clue</cite> in North America, <cite>Cleudo</cite> is a murder-mystery game based on <b>strategy</b> and <b>deduction.</b> Players make arguments based on their questioning of the <u>perpetrator</u>, <u>location</u>, and <u>method</u> of the crime.”
+      </blockquote>
+
+     //vocab for semantic markup
+
+        <br /> - Break to next line
+
+        <cite> defines the title of the work </cite>
+
+        <i> italicized </i>
+
+        //browsers will show this element in italicized by default
+        <em> emphasize/italicize </em>
+
+        <b> bold </b>
+
+        //browsers will show this element in bold by default
+        <strong> strong/bold </strong>
+
+        <address>
+            Used for including an address. Will render in italics.
+        </address>
+
+        The superscript element ( <sup>...</sup> ) and subscript element ( <sub>...</sub> ) are used to raise or lower text relative to normal text.
+
+        The superscript element denotes characters that should appear as ‘superscript’, such as date suffixes or mathematical powers.
+
+        Footnotes or chemical and mathematical formulas, especially regarding fractions such as 1/3 commonly use the subscript element.
+
+        <sup> = up
+        <sub> = down
+
+
+        <q>This is an quote element, good for keeping quotes inline with other paragraph text.</q>
+
+        <blockquote>
+            Sometimes a quote spans multiple sentences or lines.<br/>
+            Longer quotes are better served in a blockquote element.
+        </blockquote>
+
+    //Marking up abbreviations give useful information to browsers and search engines
+        
+        <abbr title=""> 
+
+        example: <abbr title="HyperText Markup Language">HTML</abbr>
+        
+    //Definition tags link to a related list of terms elsewhere on the page or site.
+
+        <def title="definition of term">term</def>
+
+        Use these when first introducing a new term into your document.
+
+    //Use <del> and <ins> to markup updates and modifications in a document. Browsers will normally strike a line through deleted text and underline inserted text.
+
+    //The strikethrough tag (<s>) specifies text that is no longer correct, accurate or relevant
+
+    //List Notes
+
+        Ordered:
+        <ol>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>Etc...</li>
+        </ol>
+            //You can customize what ol you want
+            <ol type="">
+                type="1" numbers
+                type="A" uppercase letters
+                type="a" lowercase letters
+                type="I" uppercase roman letters
+                type="i" lowercase roman letters
+            </ol>
+        Unordered:
+        <ul>
+        <li>List Item</li>
+        <li>List Item</li>
+        <li>Etc...</li>
+        </ul>
+            //Customize unordered using CSS
+            <ul style="list-style-type:disc;"></ul>
+            <ul style="list-style-type:circle;"></ul>
+            <ul style="list-style-type:square;"></ul>
+            <ul style="list-style-type:none;"></ul>
+
+        Definition List:
+        <dl>
+        <dt>Term 1</dt>
+            <dd>This is the definition of Term 1.</dd>
+        <dt>Term 2</dt>
+            <dd>This is the definition of Term 2.</dd>
+        </dl>
+
+        Nesting Lists:
+        <ol id="ordered-list">
+            <li>Ordered List Item #1.</li>
+            <li>Ordered List Item #2.</li>
+                <ul id="unordered-list">
+                    <li>Item A relating to Order List Item #2.</li>
+                    <li>Item B relating to Order List Item #2.</li>
+                </ul>
+            <li>Ordered List Item #3.</li>
+            <li>Ordered List Item #4.</li>
+            <li>Etc...</li>
+        <ol>
+
+        //use CSS propery: float:left to display a list horizantally; this is popular in making navigation menus
+
+    //Hyperlink
+        <a href="URL">link text</a>
+    //E-mail hyperlink "mailto:"
+        <a href="mailto:user@example.com">User's E-mail</a>
+
+
+    //Target attributes for Hyperlinks
+    Page will by default stay on opened tab when following links
+
+       example code: 
+       <a href="#" target="_blank">link text</a>
+
+        "_self" - Page will remain on opened tab
+        "_blank" - Opens the linked document in a new window or tab
+        "_parent" - Opens the linked document in the parent frame
+        "_top" - Opens the linked document in the full body of the window
+        
+    //Proper Tag Burrito
+    <tag3><tag2><tag1>...</tag1></tag2></tag3>
+
+    //Always specify alt,width, and height of imgs
+        example code:
+         <img src="html5.gif" alt="HTML5" style="width:128px;height:128px"> 
+
+    //
+
+
+
+
+    </body>
+
+</html>
