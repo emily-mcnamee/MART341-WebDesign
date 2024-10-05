@@ -1,0 +1,13 @@
+body {background-color: black;}
+h1 {color: white;font-family: Helvetica;}
+p {color: white;font-family: Helvetica;}
+
+#bigger{
+    font-size:larger;
+    color:aliceblue
+}
+
+.white{
+    color:white;
+    font-size:small
+}
