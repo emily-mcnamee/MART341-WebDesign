@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US" data-bs-theme="dark">
 
-<html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webpage for Emily McNamee's art and blog">
+    <meta name="author" content="Emily 'Quinn' McNamee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2024 Art</title>
+
       <!--This Webpage uses Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
-    <style>
-      h1 {color: white;font-family: Helvetica;}
-      h2 {color: white;font-family: Helvetica;}
-      h3 {color: white;font-family: Helvetica;}
-      p {color: white;font-family: Helvetica;font-size: larger;}
-    </style>
+    <!--Website's Customized Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
         
   </head>
 
@@ -37,58 +37,87 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         
       <!--Image Gallery-->
-    <br>
 
-    <h1 class="text-center">2024 Gallery</h1>
+    <div style="height: 100px;">
+      <h1 class="mh-100 text-center bg-black bg-gradient p-4 m" style="height: 100%;">2024 Gallery</h1>
+    </div> 
 
-    <br>
-
-    <figure class="figure" style="margin-left:100px;">
-      <img src="./images/AutumnRatWeb.jpg" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup." class="figure-img img-fluid border border-light-subtle border-4 rounded" style="float:left; margin-left:10px;" width="" >
-      <figcaption class="figure-caption">"AutumnRat (2024)". 1400px X 1794px, Emily McNamee, <i>IbisPaintX</i>"</figcaption>
-    </figure>
-
-    <figure class="figure"style="float:right; margin-right:150px;">
-      <img src="./images/PollutionWeb.jpg" alt="A digital illustration of a spectral human skull flying above a digital Earth. Its body is encased in smoke, and the pipes atop its head are also billowing black smog." class="figure-img img-fluid border border-light-subtle border-4 rounded" width="" >
-      <figcaption class="figure-caption">"Pollution (2024). 1125px X 1393px, Emily McNamee, <i>Adobe Photoshop</i> "</figcaption>
-    </figure>
-
-    <br>
-
-    <br>
-
-    <figure class="figure" style="float:right; margin-right:100px;">
+    <figure class="figure  mt-4" style="float:right; margin-right:100px;">
       <img src="./images/OcPortWeb.jpg" alt="A digital illustration of a blue-skinned girl with long ears sitting in her room, a sunny beam of light hitting her form." class="figure-img img-fluid border border-light-subtle border-4 rounded"" width="" >
       <figcaption class="figure-caption">"Sunny (2024). 2560px X 2560px, Emily McNamee,  <i>IbisPaintX</i>" </figcaption>
     </figure>
     
-    <figure class="figure" style="margin-left:100px;">
+    <figure class="figure  mt-4" style="margin-left:100px;">
       <img src="./images/WindWakerWeb.jpg" alt="A digital illustraion of a boy excitedly gazing into the sea from the rim of a bright red boat. The boat's lion head is also turned to where the boy is looking." class="figure-img img-fluid border border-light-subtle border-4 rounded" style="float:left; margin-left:10px;" width="" >
       <figcaption class="figure-caption">"The WindWaker (2024). 2560px X 2560px, Emily McNamee,  <i>IbisPaintX</i> "</figcaption>
     </figure>
 
+    <br>
+    <br>
+
+    <figure class="figure" style="margin-left:100px;">
+      <img src="./images/AutumnRatWeb.jpg" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup." class="figure-img img-fluid border border-light-subtle border-4 rounded" style="float:left; margin-left:10px;" width="500" >
+      <figcaption class="figure-caption">"AutumnRat (2024)". 1400px X 1794px, Emily McNamee, <i>IbisPaintX</i>"</figcaption>
+    </figure>
+
+    <figure class="figure"style="float:right; margin-right:100px;">
+      <img src="./images/PollutionWeb.jpg" alt="A digital illustration of a spectral human skull flying above a digital Earth. Its body is encased in smoke, and the pipes atop its head are also billowing black smog." class="figure-img img-fluid border border-light-subtle border-4 rounded" width="505" >
+      <figcaption class="figure-caption">"Pollution (2024). 1125px X 1393px, Emily McNamee, <i>Adobe Photoshop</i> "</figcaption>
+    </figure>
       
    <hr />
    
-   <form>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <div class="form-group w-50 mx-auto">
-            <p>Want to know when new galleries are availible?</p>
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br />
-              By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
-          </div>
-        </div>
-      </div>  
-    </div>
+   <br>
+    
+    <form>
+      <div class="container border border-2 w-50 p-3">
+        <h3 class="text-center">Which 2024 Illustration is Your Favorite?</h3>
+          <div class="mx-auto text-center">
+              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option1">"AutumnRat"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+              <label class="btn btn-outline-secondary" for="option2">"Pollution"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option3">"Sunny"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option4">"The WindWaker"</label>
+            </div> 
+            <br>
+            <button type="submit" class="btn btn-outline-primary d-grid mx-auto p-2">Submit!</button>
+      </div>
+    </form>
+
     <br>
-    <button type="submit" class="btn btn-primary">Subscribe</button>
-  </form>
-  <br>
-  <br>
+
+    <hr />
+
+    <br>
+
+    <form>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9">
+            <h4 class="text-center">Want to Know when New Galleries are Available?</h4><br>
+            <div class="form-group w-50 mx-auto">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br />
+                By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <br>
+      <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
+    </form>
+
+    
+    <br>
+    
+    <br>
 
   </body>
 </html>

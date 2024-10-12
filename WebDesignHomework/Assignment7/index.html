@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US" data-bs-theme="dark">
 
-<html>
   <head>
     <!-- metadata for page -->
     <meta charset="UTF-8">
@@ -13,12 +12,8 @@
     <!--This Webpage uses Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
 
-    <style>
-      h1 {color: white;font-family: Helvetica;}
-      h2 {color: white;font-family: Helvetica;}
-      h3 {color: white;font-family: Helvetica;}
-      p {color: white;font-family: Helvetica;font-size: larger;}
-    </style>
+    <!--Website's Customized Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
 
   </head>
 
@@ -27,7 +22,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Quinn's Art Blog</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -45,11 +40,12 @@
 
      <!--Website Text-->
     <span class="text-center" data-bs-theme="dark">
-                
-      <br>
 
-      <h1 class="text-center">About Me</h1>
-      <div class="container mt-5">
+      <div style="height: 100px;">
+        <h1 class="mh-100 text-center bg-black bg-gradient p-4" style="height: 100%;">About Me</h1>
+      </div> 
+
+      <div class="container mt-4">
         <img src="./images/Profile.jpg" alt="A picture portrait of the artist, Emily 'Quinn' McNamee" class="img-fluid border border-light-subtle border-4 rounded" width="250">
       </div>
 
@@ -81,12 +77,8 @@
 
       <hr />
                 
-      <a href= "contact.html" class="d-flex justify-content-center align-items-center fw-bold text-decoration-none fs-4">Contact Me!</a>
-
-      <hr />
-                
       <div class="container mt-5">
-        <p>Programs Used :                 
+        <p>Programs Used : </p>                
           <ul class="list-group list-group-horizontal offset-md-2" >
             <li class="list-group-item">Procreate</li>
             <li class="list-group-item">IbisPaintX</li>
@@ -95,7 +87,6 @@
             <li class="list-group-item">Adobe Audition</li>
             <li class="list-group-item">Touch-Designer</li>
           </ul>
-        </p>
       </div>
           
       <br>
@@ -106,8 +97,8 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-9">
+              <h4 class="text-center">Want to Know when New Galleries are Available?</h4><br>
               <div class="form-group w-50 mx-auto">
-                <p>Want to know when new galleries are availible?</p>
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br />
@@ -117,7 +108,8 @@
           </div>  
         </div>
         <br>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
+      </form>
 
       </form>
       <br>
