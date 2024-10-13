@@ -6,4 +6,5 @@
   - Created and implemented Website Custom CSS sheet (mainstyle.css)
   - Added gallery voting on bottom of pages 2-3 (2023 and 2024 Galleries)
   - Customized headers: added black background + gradient
-  * Created Dropdown list for Galleries -->
+  - Created Dropdown list for Galleries 
+-->

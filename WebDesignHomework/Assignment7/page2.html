@@ -15,28 +15,42 @@
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Quinn's Art Blog</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#">Quinn's Art Blog</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+          </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="index.html">About</a>
-            <a class="nav-link active" aria-current="page" href="page2.html">2023 Gallery</a>
-            <a class="nav-link" href="page3.html">2024 Gallery</a>
-            <a class="nav-link" href="contact.html">Contact Me</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact Me</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Galleries
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./page2.html">2023</a></li>
+                      <li><a class="dropdown-item" href="./page3.html">2024</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </nav>
 
-     <!--Image Gallery-->  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--End of Navigation Bar-->
+
+    <!--Image Gallery-->  
        
      <div style="height: 100px;">
       <h1 class="mh-100 text-center bg-black bg-gradient p-4 m" style="height: 100%;">2023 Gallery</h1>
-    </div> 
+     </div> 
 
     <figure class="figure mt-4" style="margin-left:100px;">
       <img src="./images/AxolotlsWeb.jpg" alt="Digital Illustration of a pink Axolotl swimming underwater." class="figure-img img-fluid border border-light-subtle border-4 rounded" style="float:left; margin-left:10px;" width="" >
