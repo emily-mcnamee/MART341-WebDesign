@@ -1,4 +1,4 @@
-<!--WEBSITE CHANGE LOG: 
+<h3>WEBSITE CHANGE LOG: </h3>
   - Added contact.html link to website navigation bar
   - Added the correct descriptive alt text to images 
   - Edited website images to be more web-friendly
@@ -7,9 +7,9 @@
   - Added gallery voting on bottom of pages 2-3 (2023 and 2024 Galleries)
   - Customized headers: added black background + gradient
   - Created Dropdown list for Galleries 
--->
 
-<h1>Website Highlights</h2>
+
+<h2>Website Highlights</h2>
 
   <p>I'm personally very happy with how I managed to implement bootstrap into my website, and figuring out how to create the navigation bar is definitely my personal favorite part of my website due to the attention I put into trying to learn how to code one into the site. The people who commented on my discussion mentioned to make sure that the organization is wel put together, and someone also recommended to put borders around my images; so I made sure that those elements were correctly implemented into my webpage. </p>
 
