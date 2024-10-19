@@ -7,17 +7,28 @@
     <meta name="description" content="Webpage for Emily McNamee's art and blog">
     <meta name="author" content="Emily 'Quinn' McNamee">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me</title>
+    <title>Multi-Media</title>
 
     <!--This Webpage uses Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
+
     <!--Website's Customized Style Sheet-->
     <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
+
+    
+  <style>
+    /* Optional custom styling */
+    .video-container {
+      /*max-width: 720px;*/ /* Optional: Control video container size */
+      /*margin: auto;*/   /* Center the video horizontally */
+      padding-top: 50px;
+    }
+  </style>
 
   </head>
 
   <body>
-    <!-- Navigation Bar-->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
           <a class="navbar-brand" href="#">Quinn's Art Blog</a>
@@ -28,10 +39,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./contact.html">Contact Me</a>
+                    <a class="nav-link" href="./contact.html">Contact Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./mmediaProjects.html">Multi-Media</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,18 +63,109 @@
           </nav>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <!--End of Navigation Bar-->
     
+    <span class="text-center" data-bs-theme="dark">
 
+      <div style="height: 100px;">
+        <h1 class="mh-100 text-center bg-black bg-gradient p-4" style="height: 100%;">Audio and Multi-Media</h1>
+      </div> 
 
+      <br>
+      <br>
 
+      <div class="container-fluid video-container">
+        <!-- Bootstrap Row for side-by-side alignment -->
+        <div class="row justify-content-center">
+          <!-- Video 1 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/1_laDjSRvEA" 
+                title="YouTube video 1" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+    
+          <!-- Video 2 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/eOwREXl17iM" 
+                title="YouTube video 2" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="container-fluid video-container">
+    
+        <!-- Bootstrap Row for side-by-side alignment -->
+        <div class="row justify-content-center">
+          <!-- Video 1 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/0E03vpxc5BM " 
+                title="YouTube video 1" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+    
+          <!-- Video 2 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/L3rTI4L45Jk" 
+                title="YouTube video 2" 
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <hr />
+      
+      <!--Audio Files-->
+      <div class="container audio-container">
+        <h2 class="text-center mb-4">Audio Projects</h2>
+    
+        <!-- Row to align audio players side by side -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5 mb-4">
+            <div class="card shadow-lg p-3 rounded audio-card">
+              <div class="card-body text-center">
+                <h5 class="card-title">"Oscillator Smooth Lofi"</h5>
+                <audio controls class="w-50 mt-3">
+                  <source src="./audio/MCNAMEE_Oscillator01_21102023_mixdown.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-5 mb-4">
+            <div class="card shadow-lg p-3 rounded audio-card">
+              <div class="card-body text-center">
+                <h5 class="card-title">"Joy of the Nords"</h5>
+                <audio controls class="w-50 mt-3">
+                  <source src="./audio/MCNAMEE_SoundProduction_LoopProject_06112024.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-
-
-
-
+  <hr />
 
     <!--Email Form-->
     <form>
@@ -82,6 +187,6 @@
     </form>
     <!--End of Email Form-->
 
-
+    </span>
   </body>
 </html>
