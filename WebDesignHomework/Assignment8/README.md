@@ -5,15 +5,15 @@
     <ul>
     <li>Navigation Bar divs - 3 unique divs total &#40;navbar, container, navbar-collapse&#41;</li>
     <li>Email form container - 2 unique divs total &#40;container + email input form&#41;</li>
-    <p>Customized div containers, including the variables: container, container-fluid, form-group, and row. Placing the individual media elements into their own custom containers allowed for further customization such as borders, ratios, and the ability to organize the elements in a more flexible way.</p>
     </ul>
+     <p>Customized div containers, including the variables: container, container-fluid, form-group, and row. Placing the individual media elements into their own custom containers allowed for further customization such as borders, ratios, and the ability to organize the elements in a more flexible way.</p>
    <li>SPAN</li>
     <ul>
     <li>Button appearance for navbar dropdown toggle &#40;&lt;span class&#61;"navbar-toggler-icon"&gt;&lt;/span&gt;&#41;</li>
     <li>text span classes "text-center" and data-bs-theme="dark"</li>
     <li>Custom css style sheet containing most of the span class changes</li>
-    <p>Most of my span class editing is in the mainstyle.css sheet inside the styles folder. To make the text more accessible, I used a sans serif font with an off-white color font to minimize eye strain. The font sizes are also enlarged to maximize readability. To customize further, I would find a different header font to make the headers pop out more, but for now their larger size is adequate.</p>
     </ul>
+    <p>Most of my span class editing is in the mainstyle.css sheet inside the styles folder. To make the text more accessible, I used a sans serif font with an off-white color font to minimize eye strain. The font sizes are also enlarged to maximize readability. To customize further, I would find a different header font to make the headers pop out more, but for now their larger size is adequate.</p>
    <li>AUDIO</li>
     <ul>
     <li>"Joy of the Nords"</li>
