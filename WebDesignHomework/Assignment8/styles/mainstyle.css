@@ -1,14 +1,4 @@
-h1 {color: white;font-family: Arial, Helvetica, sans-serif;font-style: normal}
-h2 {color: white;font-family: Arial, Helvetica, sans-serif;font-style: normal}
-h3 {color: white;font-family:Arial, Helvetica, sans-serif;font-style: normal}
-p {color: white; font-family:Arial, Helvetica, sans-serif; font-style: normal;font-size: larger;}
-
-#bigger{
-    font-size:larger;
-    color:aliceblue
-}
-
-.white{
-    color:white;
-    font-size:small
-}
+h1 {color: #E0E0E0;font-family: Arial, Helvetica, sans-serif;font-style: normal;}
+h2 {color: #E0E0E0;font-family: Arial, Helvetica, sans-serif;font-style: normal;}
+h3 {color: #E0E0E0;font-family:Arial, Helvetica, sans-serif;font-style: normal;}
+p {color: #e1e1e1; font-family:Arial, Helvetica, sans-serif; font-style: normal;font-size: larger;}

@@ -3,6 +3,11 @@
 
 
   <head>
+    <!-- metadata for page -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Webpage for Emily McNamee's art and blog">
+    <meta name="author" content="Emily 'Quinn' McNamee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023 Art</title>
      <!--This Webpage uses Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
@@ -23,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact Me</a>
@@ -51,37 +56,45 @@
 
     <!--Image Gallery-->  
        
-     <div style="height: 100px;">
-      <h1 class="mh-100 text-center bg-black bg-gradient p-4 m" style="height: 100%;">2023 Gallery</h1>
-     </div> 
+    <div class="container-fluid bg-dark bg-gradient text-light d-flex flex-column justify-content-center" 
+    style="min-height: 100px; height: 20vh; padding: 20px; border-radius: 8px;">
+      <h1 class="text-center mb-0">2023 Gallery</h1>
+    </div>
 
     <figure class="figure mt-4" style="margin-left:100px;">
-      <img src="./images/AxolotlsWeb.jpg" alt="Digital Illustration of a pink Axolotl swimming underwater." class="figure-img img-fluid border border-white border-5 rounded" style="float:left; margin-left:10px;" width="" >
-      <figcaption class="figure-caption">"Axolotls (2023)". 1100px X 1089px, Emily McNamee, <i>Procreate</i>"</figcaption>
+      <img src="./images/AxolotlsWeb.jpg" alt="Digital Illustration of a pink Axolotl swimming underwater." class="figure-img img-fluid border border-light-subtle border-5 rounded" style="float:left; margin-left:10px;" width="" >
+      <figcaption class="figure-caption">"Axolotls &#40;2023&#41;". 1100px X 1089px, Emily McNamee, <i>Procreate</i>"</figcaption>
     </figure>
 
     <figure class="figure mt-4" style="float:right; margin-right:100px;">
-      <img src="./images/TimeWeb.jpg" alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them." class="figure-img img-fluid border border-white border-5 rounded" width="" >
-      <figcaption class="figure-caption">"Time (2023). 1280px X 1280px, Emily McNamee,  <i>IbisPaintX</i>" </figcaption>
+      <img src="./images/TimeWeb.jpg" alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them." class="figure-img img-fluid border border-light-subtle border-5 rounded" width="" >
+      <figcaption class="figure-caption">"Time &#40;2023&#41;. 1280px X 1280px, Emily McNamee,  <i>IbisPaintX</i>" </figcaption>
     </figure>
 
     <br>
     <br>
 
     <figure class="figure" style="margin-left:100px;">
-      <img src="./images/UpDownWeb.jpg" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them." class="figure-img img-fluid border border-white border-5 rounded" style="float:left; margin-left:10px;" width="" >
-      <figcaption class="figure-caption">"Updown (2023). 2560px X 2560px, Emily McNamee,  <i>Procreate</i> "</figcaption>
+      <img src="./images/UpDownWeb.jpg" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them." class="figure-img img-fluid border border-light-subtle border-5 rounded" style="float:left; margin-left:10px;" width="" >
+      <figcaption class="figure-caption">"Updown &#40;2023&#41;. 2560px X 2560px, Emily McNamee,  <i>Procreate</i> "</figcaption>
     </figure>
 
     <figure class="figure"style="float:right; margin-right:100px;">
-      <img src="./images/OcWeb.jpg" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious." class="figure-img img-fluid border border-white border-5 rounded" width="" >
-      <figcaption class="figure-caption">"Solveig (2023). 1122px X 1149px, Emily McNamee, <i>IbisPaintX</i> "</figcaption>
+      <img src="./images/OcWeb.jpg" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious." class="figure-img img-fluid border border-light-subtle border-5 rounded" width="" >
+      <figcaption class="figure-caption">"Solveig &#40;2023&#41;. 1122px X 1149px, Emily McNamee, <i>IbisPaintX</i> "</figcaption>
     </figure>
 
-    <hr />
-
+    <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px;  /*  */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
 
     <br>
+
     <!--Voting Form-->
     <form>
       <div class="container border border-2 w-50 p-3">
@@ -101,38 +114,54 @@
               <label class="btn btn-outline-secondary" for="option4">"Solveig"</label>
             </div> 
             <br>
-            <button type="submit" class="btn btn-outline-primary d-grid mx-auto p-2">Submit!</button>
+            <button type="submit" class="btn btn-outline-light d-grid mx-auto p-2">Submit!</button>
       </div>
     </form>
 
     <br>
 
-    <hr />
+     <!--Email Form-->
+     <form>
+      <div class="container-fluid bg-dark bg-gradient text-light pb-5" 
+           id="emailformcontainer" 
+           style="border-radius: 8px; padding: 20px 40px;">
 
-    <br>
-    <!--Email Form-->
-    <form>
-      <div class="container">
+        <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px;  /*  */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
+
         <div class="row justify-content-center">
-          <div class="col-md-9">
-            <h4 class="text-center">Want to Know when New Galleries are Available?</h4><br>
-            <div class="form-group w-50 mx-auto">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br>
-                By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
+          <div class="col-md-6 col-lg-4 p-3">
+            <h5 class="text-center mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+    
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="small"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp" 
+                     placeholder="Enter email">
+    
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br />
+                By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+              </small>
             </div>
           </div>
-        </div>  
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-sm d-block mx-auto mt-3" 
+                style="width: 150px;">
+          Subscribe
+        </button>
       </div>
-      <br>
-      <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
     </form>
+    
+    <!--End of Email Form-->
 
-    
-    <br>
-    
-    <br>
 
   </body>
 </html>

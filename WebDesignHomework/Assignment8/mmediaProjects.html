@@ -17,12 +17,12 @@
 
     
   <style>
-    /* Optional custom styling */
     .video-container {
-      /*max-width: 720px;*/ /* Optional: Control video container size */
-      /*margin: auto;*/   /* Center the video horizontally */
       padding-top: 50px;
     }
+    .bg-custom {
+    background-color: #2d2f33;  /* Dark gray */
+  }
   </style>
 
   </head>
@@ -66,9 +66,10 @@
     
     <span class="text-center" data-bs-theme="dark">
 
-      <div style="height: 100px;">
-        <h1 class="mh-100 text-center bg-black bg-gradient p-4" style="height: 100%;">Audio and Multi-Media</h1>
-      </div> 
+    <div class="container-fluid bg-dark bg-gradient text-light d-flex flex-column justify-content-center" 
+    style="min-height: 100px; height: 20vh; padding: 20px; border-radius: 8px;">
+      <h1 class="text-center mb-0">Audio and Multi-Media</h1>
+    </div>
 
       <br>
       <br>
@@ -81,10 +82,13 @@
             <div class="ratio ratio-16x9">
               <iframe 
                 src="https://www.youtube.com/embed/1_laDjSRvEA" 
-                title="YouTube video 1" 
+                title="TouchDesigner Video 1"
+                aria-label="Video showcasing a TouchDesigner project; projecting swirling colors that move on-beat to the music"
+                aria-describedby="videoDescription"
                 allowfullscreen>
               </iframe>
             </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;TouchDesigner Audio Reactive&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br>Made in TouchDesigner.</i></p>
           </div>
     
           <!-- Video 2 -->
@@ -92,10 +96,13 @@
             <div class="ratio ratio-16x9">
               <iframe 
                 src="https://www.youtube.com/embed/eOwREXl17iM" 
-                title="YouTube video 2" 
+                title="Adobe After Effects Video 2" 
+                aria-label="Video showcasing a project made in Adobe After Effects. It advertises a fictional kids app with dogs as its teaching mascots."
+                aria-describedby="videoDescription"
                 allowfullscreen>
               </iframe>
             </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;k-9 Advertisement&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br>Made in Adobe After Effects.</i></p>
           </div>
         </div>
       </div>
@@ -109,10 +116,13 @@
             <div class="ratio ratio-16x9">
               <iframe 
                 src="https://www.youtube.com/embed/0E03vpxc5BM " 
-                title="YouTube video 1" 
+                title="Adobe After Effects Video 3"
+                aria-label="Video created in Adobe After Effects, showing an office filled with monitors displaying various people, observed by a man reclining calmly." 
+                aria-describedby="videoDescription"
                 allowfullscreen>
               </iframe>
             </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;Who is watching who?&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br> Made in Adobe After Effects.</i></p>
           </div>
     
           <!-- Video 2 -->
@@ -120,15 +130,25 @@
             <div class="ratio ratio-16x9">
               <iframe 
                 src="https://www.youtube.com/embed/L3rTI4L45Jk" 
-                title="YouTube video 2" 
+                title="Adobe AFter Effects Video 4"
+                aria-label="Video created in Adobe After Effects. A simple animation of collections of three shapes reacting to the music." 
+                aria-describedby="videoDescription"
                 allowfullscreen>
               </iframe>
             </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;Project 01&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br>Made in Adobe After Effects.</i></p>
           </div>
         </div>
       </div>
 
-      <hr />
+      <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px; /* Negative top margin to lift the <hr> */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */ " />
       
       <!--Audio Files-->
       <div class="container audio-container">
@@ -139,8 +159,8 @@
           <div class="col-md-6 col-lg-5 mb-4">
             <div class="card shadow-lg p-3 rounded audio-card">
               <div class="card-body text-center">
-                <h5 class="card-title">"Oscillator Smooth Lofi"</h5>
-                <audio controls class="w-50 mt-3">
+                <h5 class="card-title">&#34;Oscillator Smooth Lofi&#34;</h5>
+                <audio controls class="w-50 mt-3" aria-label="Audio controlled by oscillated sine waves.">
                   <source src="./audio/MCNAMEE_Oscillator01_21102023_mixdown.wav" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
@@ -151,8 +171,8 @@
           <div class="col-md-6 col-lg-5 mb-4">
             <div class="card shadow-lg p-3 rounded audio-card">
               <div class="card-body text-center">
-                <h5 class="card-title">"Joy of the Nords"</h5>
-                <audio controls class="w-50 mt-3">
+                <h5 class="card-title">&#34;Joy of the Nords&#34;</h5>
+                <audio controls class="w-50 mt-3" aria-label="Song of drums beating into time to multiple voices of war chanting.">
                   <source src="./audio/MCNAMEE_SoundProduction_LoopProject_06112024.wav" type="audio/mpeg">
                   Your browser does not support the audio element.
                 </audio>
@@ -165,28 +185,48 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-  <hr />
+    <br>
 
     <!--Email Form-->
     <form>
-      <div class="container" id="emailformcontainer">
+      <div class="container-fluid bg-dark bg-gradient text-light pb-5" 
+           id="emailformcontainer" 
+           style="border-radius: 8px; padding: 20px 40px;">
+
+        <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px;  /*  */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
+
         <div class="row justify-content-center">
-          <div class="col-md-9">
-            <h4 class="text-center">Want to Know when New Galleries are Available?</h4><br>
-            <div class="form-group w-50 mx-auto">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br />
-                By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
+          <div class="col-md-6 col-lg-4 p-3">
+            <h5 class="text-center mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+    
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="small"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp" 
+                     placeholder="Enter email">
+    
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br />
+                By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+              </small>
             </div>
           </div>
-        </div>  
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-sm d-block mx-auto mt-3" 
+                style="width: 150px;">
+          Subscribe
+        </button>
       </div>
-      <br>
-      <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
     </form>
     <!--End of Email Form-->
-
     </span>
   </body>
 </html>

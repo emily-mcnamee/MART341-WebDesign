@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact Me</a>
@@ -55,39 +55,48 @@
         
     <!--Image Gallery-->
 
-    <div style="height: 100px;">
-      <h1 class="mh-100 text-center bg-black bg-gradient p-4 m" style="height: 100%;">2024 Gallery</h1>
-    </div> 
+    <div class="container-fluid bg-dark bg-gradient text-light d-flex flex-column justify-content-center" 
+    style="min-height: 100px; height: 20vh; padding: 20px; border-radius: 8px;">
+      <h1 class="text-center mb-0">2023 Gallery</h1>
+    </div>
 
     <figure class="figure  mt-4" style="float:right; margin-right:100px;">
-      <img src="./images/OcPortWeb.jpg" alt="A digital illustration of a blue-skinned girl with long ears sitting in her room, a sunny beam of light hitting her form." class="figure-img img-fluid border border-light border-5 rounded"" width="" >
-      <figcaption class="figure-caption">"Sunny (2024). 2560px X 2560px, Emily McNamee,  <i>IbisPaintX</i>" </figcaption>
+      <img src="./images/OcPortWeb.jpg" alt="A digital illustration of a blue-skinned girl with long ears sitting in her room, a sunny beam of light hitting her form." class="figure-img img-fluid border border-light-subtle border-5 rounded"" width="" >
+      <figcaption class="figure-caption">"Sunny &#40;2024&#41;. 2560px X 2560px, Emily McNamee,  <i>IbisPaintX</i>" </figcaption>
     </figure>
     
     <figure class="figure  mt-4" style="margin-left:100px;">
-      <img src="./images/WindWakerWeb.jpg" alt="A digital illustraion of a boy excitedly gazing into the sea from the rim of a bright red boat. The boat's lion head is also turned to where the boy is looking." class="figure-img img-fluid border border-light border-5 rounded" style="float:left; margin-left:10px;" width="" >
-      <figcaption class="figure-caption">"The WindWaker (2024). 2560px X 2560px, Emily McNamee,  <i>IbisPaintX</i> "</figcaption>
+      <img src="./images/WindWakerWeb.jpg" alt="A digital illustraion of a boy excitedly gazing into the sea from the rim of a bright red boat. The boat's lion head is also turned to where the boy is looking." class="figure-img img-fluid border border-light-subtle border-5 rounded" style="float:left; margin-left:10px;" width="" >
+      <figcaption class="figure-caption">"The WindWaker &#40;2024&#41;. 2560px X 2560px, Emily McNamee,  <i>IbisPaintX</i> "</figcaption>
     </figure>
 
     <br>
     <br>
 
     <figure class="figure" style="margin-left:100px;">
-      <img src="./images/AutumnRatWeb.jpg" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup." class="figure-img img-fluid border border-light border-5 rounded" style="float:left; margin-left:10px;" width="500" >
-      <figcaption class="figure-caption">"AutumnRat (2024)". 1400px X 1794px, Emily McNamee, <i>IbisPaintX</i>"</figcaption>
+      <img src="./images/AutumnRatWeb.jpg" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup." class="figure-img img-fluid border border-light-subtle border-5 rounded" style="float:left; margin-left:10px;" width="500" >
+      <figcaption class="figure-caption">"AutumnRat &#40;2024&#41;". 1400px X 1794px, Emily McNamee, <i>IbisPaintX</i>"</figcaption>
     </figure>
 
     <figure class="figure"style="float:right; margin-right:100px;">
-      <img src="./images/PollutionWeb.jpg" alt="A digital illustration of a spectral human skull flying above a digital Earth. Its body is encased in smoke, and the pipes atop its head are also billowing black smog." class="figure-img img-fluid border border-light border-5 rounded" width="505" >
-      <figcaption class="figure-caption">"Pollution (2024). 1125px X 1393px, Emily McNamee, <i>Adobe Photoshop</i> "</figcaption>
+      <img src="./images/PollutionWeb.jpg" alt="A digital illustration of a spectral human skull flying above a digital Earth. Its body is encased in smoke, and the pipes atop its head are also billowing black smog." class="figure-img img-fluid border border-light-subtle border-5 rounded" width="505" >
+      <figcaption class="figure-caption">"Pollution &#40;2024&#41;. 1125px X 1393px, Emily McNamee, <i>Adobe Photoshop</i> "</figcaption>
     </figure>
       
-   <hr />
+    <hr style="
+    border-top: 2px solid #fff; 
+    width: 80%; 
+    margin: -15px auto 20px;  /*  */
+    opacity: 0.8; 
+    position: relative;
+    z-index: 1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
    
    <br>
+
     <!--Voting Form-->
     <form>
-      <div class="container border border-2 w-50 p-3">
+      <div class="container border border-2 w-50 p-3 pb-5">
         <h3 class="text-center">Which 2024 Illustration is Your Favorite?</h3>
           <div class="mx-auto text-center">
               <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
@@ -103,38 +112,52 @@
               <label class="btn btn-outline-secondary" for="option4">"The WindWaker"</label>
             </div> 
             <br>
-            <button type="submit" class="btn btn-outline-primary d-grid mx-auto p-2">Submit!</button>
+            <button type="submit" class="btn btn-outline-light d-grid mx-auto p-2">Submit!</button>
       </div>
     </form>
 
     <br>
 
-    <hr />
-
-    <br>
     <!--Email Form-->
     <form>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-9">
-            <h4 class="text-center">Want to Know when New Galleries are Available?</h4><br>
-            <div class="form-group w-50 mx-auto">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br />
-                By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
-            </div>
-          </div>
-        </div>  
-      </div>
-      <br>
-      <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
-    </form>
+     <div class="container-fluid bg-dark bg-gradient text-light pb-5" 
+          id="emailformcontainer" 
+          style="border-radius: 8px; padding: 20px 40px;">
 
-    
-    <br>
-    
-    <br>
+       <hr style="
+       border-top: 2px solid #fff; 
+       width: 80%; 
+       margin: -15px auto 20px;  /*  */
+       opacity: 0.8; 
+       position: relative;
+       z-index: 1; 
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
+
+       <div class="row justify-content-center">
+         <div class="col-md-6 col-lg-4 p-3">
+           <h5 class="text-center mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+   
+           <div class="form-group">
+             <label for="exampleInputEmail1" class="small"><strong>Email address</strong></label>
+             <input type="email" class="form-control form-control-sm" 
+                    id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" 
+                    placeholder="Enter email">
+   
+             <small id="emailHelp" class="form-text text-muted mt-1">
+               <strong>We’ll never share your email. <br />
+               By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+             </small>
+           </div>
+         </div>
+       </div>
+       <button type="submit" class="btn btn-outline-light btn-sm d-block mx-auto mt-3" 
+               style="width: 150px;">
+         Subscribe
+       </button>
+     </div>
+   </form>
+   <!--End of Email Form-->
 
   </body>
 </html>

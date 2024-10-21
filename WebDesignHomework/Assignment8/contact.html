@@ -54,9 +54,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!--End of Navigation Bar-->
 
-    <div style="height: 100px;">
-      <h1 class="mh-100 text-center bg-black bg-gradient p-4 m" style="height: 100%;">Contact Me</h1>
-    </div> 
+    <div class="container-fluid bg-dark bg-gradient text-light d-flex flex-column justify-content-center" 
+    style="min-height: 100px; height: 20vh; padding: 20px; border-radius: 8px;">
+      <h1 class="text-center mb-0">2023 Gallery</h1>
+    </div>
 
     <div class="container-fluid text-center mt-4">
       <address style="font-size: larger; ">
@@ -70,36 +71,47 @@
       <p>I look forward to speaking with you!</p>
     </div>
     
-    <hr />
-    
+    <br>
+
     <!--Email Form-->
     <form>
-      <div class="container">
+      <div class="container-fluid bg-dark bg-gradient text-light pb-5" 
+           id="emailformcontainer" 
+           style="border-radius: 8px; padding: 20px 40px;">
+
+        <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px;  /*  */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
+
         <div class="row justify-content-center">
-          <div class="col-md-9">
-            <div class="form-group w-50 mx-auto">
-              <p>Want to know when new galleries are availible?</p>
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br>
-                By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
+          <div class="col-md-6 col-lg-4 p-3">
+            <h5 class="text-center mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+    
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="small"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm" 
+                     id="exampleInputEmail1" 
+                     aria-describedby="emailHelp" 
+                     placeholder="Enter email">
+    
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br />
+                By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+              </small>
             </div>
           </div>
-        </div>  
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-sm d-block mx-auto mt-3" 
+                style="width: 150px;">
+          Subscribe
+        </button>
       </div>
-      <br>
-      <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
     </form>
-    <br>
-    <br>
-           
+  <!--End of Email Form-->
   </body>
 </html>
-
-
-
-
-
-
-
-
