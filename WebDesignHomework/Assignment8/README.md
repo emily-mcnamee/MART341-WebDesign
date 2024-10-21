@@ -34,7 +34,7 @@
     <li>Bootstrap div and span classes for voting forms</li>
     <li>Bootstrap div and span classes for iframes and audio</li>
     <li>Custom class style for hr tags</li>
-    <p>It was very important to me that almost all of the media within my website followed bootstrap's customization to stick to a style.<br> To make the website more accessible, I added alt text to all of the images, and ARIA descriptions inside the videos and audio files. The subscribe and navbar buttons are hover-sensitive, as well as all links being underlined to highlight the interactive elements of the page. The background is also a dark grey; the color being a customized variable from bootstrap.<br> If I wanted to go even further, I would also look into finding out how to code in a light to dark mode toggle button on the top of the screen.
+    <p>It was very important to me that almost all of the media within my website followed bootstrap's customization to stick to a style.<br> To make the website more accessible, I added alt text to all of the images, and ARIA descriptions inside the videos and audio files. The subscribe and navbar buttons are hover-sensitive, as well as all links being underlined to highlight the interactive elements of the page. The background is also a dark grey; the color being a customized variable from bootstrap.<br> Page headers have also been customized to better stylistically fit into the rest of the webpage. If I wanted to go even further, I would also look into finding out how to code in a light to dark mode toggle button on the top of the screen.
     </ul>
    <li>ESCAPE CHARA</li>
     <ul>
