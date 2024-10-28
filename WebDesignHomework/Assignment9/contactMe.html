@@ -14,40 +14,73 @@
         <!--Website's Customized Style Sheet-->
         <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
 
+        <style>
+          .custom-list .list-group-item {
+            background-color: transparent;
+            padding-bottom: 1px; 
+            margin: 0.2rem 0;
+          }
+          .custom-color-list .list-group-item {
+            color: var(--dark-green-text);
+          }
+        </style>
+
     </head>
 
     <body>
         <!-- Navigation Bar-->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navigation</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item mx-3">
-                  <a href="./index.html" class="nav-link">
-                    <button class="btn btn-outline-light">Home</button>
-                  </a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a href="./gallery.html" class="nav-link">
-                    <button class="btn btn-outline-light">Gallery</button>
-                  </a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a href="./contactMe.html" class="nav-link">
-                    <button class="btn btn-outline-light">Contact</button>
-                  </a>
-                </li>
+        <nav class="navbar fixed-top navbar-expand-lg border-bottom border-5 border-light mb-2" style="background-color: var(--light-green);">
+          <a class="navbar-brand" style="color: var(--dark-gray-text);" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-3">
+                <a href="./index.html" class="nav-link">
+                  <button class="btn btn-outline-dark">Home</button>
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="./gallery.html" class="nav-link">
+                  <button class="btn btn-outline-dark">Gallery</button>
+                </a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="./contactMe.html" class="nav-link">
+                  <button class="btn btn-outline-dark">Contact</button>
+                </a>
+              </li>
 
-              </ul>
+            </ul>
+          </div>
+        </nav>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!--End of Navigation Bar-->
+  
+      <span class="text-center">
+          
+          <div class="container-fluid text-center" style="padding-top: 150px;">
+            <address style="font-size: larger; ">
+              <p>Emily McNamee<br>
+              Helena, Montana 59602</p>
+              <p>For future collaborations, please contact me through:</p>
+              <a href="mailto:o7jbei0xm@mozmail.com" class="fw-bold text-decoration-none">My Email</a><br>
+              <span style="font-size: smaller;"><u>OR</u></span><br>
+              <a href="https://www.instagram.com/macadi.io/"  class="fw-bold text-decoration-none">My Instagram</a><br>
+            </address>
+            <p>I look forward to speaking with you!</p>
+          </div>
+
+          <div class="d-grid mt-5 mb-5 col-6 mx-auto">
+            <a href="https://emily-mcnamee.github.io/MART341-WebDesign/WebDesignHomework/Assignment8/">
+              <button class="btn btn-outline-dark" type="button">Click Here to visit my Art Blog!</button>
+            </a>
             </div>
-          </nav>
-          
+          </div>
 
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-          <!--End of Navigation Bar-->
-          
+        </span>
     </body>
 </html>

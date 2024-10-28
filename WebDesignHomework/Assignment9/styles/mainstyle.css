@@ -1,4 +1,22 @@
-h1 {color: #E0E0E0;font-family: Arial, Helvetica, sans-serif;font-style: normal;}
-h2 {color: #E0E0E0;font-family: Arial, Helvetica, sans-serif;font-style: normal;}
-h3 {color: #E0E0E0;font-family:Arial, Helvetica, sans-serif;font-style: normal;}
-p {color: #e1e1e1; font-family:Arial, Helvetica, sans-serif; font-style: normal;font-size: larger;}
+
+:root {
+    --light-green: #91da95;
+    --light-cream: #f7f2da;
+    --dark-green-text: #2e4b33;
+    --dark-gray-text: #333333;
+  }
+  
+  body {
+    background-color: var(--light-cream);
+    color: var(--dark-gray-text);
+  }
+  
+  .section-green-background {
+    background-color: var(--light-green);
+    color: var(--dark-green-text);
+  } 
+  
+h1 {font-family: Arial, Helvetica, sans-serif ;font-style: normal; font-size: fs-3 fs-md-4 fs-lg-5;}
+h2 {font-family: Brush Script MT, Brush Script Std, cursive; font-size: fs-3 fs-md-4 fs-lg-5;}
+h3 {font-family:Arial, Helvetica, sans-serif;font-style: normal;}
+p {font-family:Arial, Helvetica, sans-serif; font-style: normal;font-size: larger;} 
