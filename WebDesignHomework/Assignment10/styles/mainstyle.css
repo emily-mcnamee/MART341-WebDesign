@@ -1,0 +1,88 @@
+* {
+    color: #E0E0E0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+    text-align: center !important;
+}
+    
+p {
+    color: #e1e1e1; 
+    font-size: larger;
+}
+
+.customBreak {
+    /* Custom hr break */
+    border-top: 2px solid #fff; 
+    width: 80%; 
+    margin: -15px auto 20px;
+    opacity: 0.6; 
+    position: relative;
+    z-index: 1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Trying to DRY my styling by combining the custom bootstrap classes into single use custom classes */
+/* Bootstrap styles .bg-dark, .bg-gradient, and .btn-outline-light would only function outside of the custom class 
+    so that is why they are excluded from the mainstyle sheet */
+
+.myHeader {
+    
+    /* Styles from container-fluid */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    /* Styles from text-light */
+    color: #f8f9fa !important;
+
+    /* Styles from d-flex */
+    display: flex !important;
+
+    /* Styles from flex-column */
+    flex-direction: column !important;
+
+    /* Styles from justify-content-center */
+    justify-content: center !important;
+
+    /* Additional styling */
+    min-height: 100px; 
+    height: 20vh; 
+    padding: 20px; 
+    border-radius: 8px;
+      
+}
+
+.myEmailForm {
+    
+    width: 100%;                           /* Full-width container */
+    padding-right: 15px;                    /* Bootstrap container padding */
+    padding-left: 15px;
+    margin-right: auto;                     /* Centered horizontally */
+    margin-left: auto;
+    color: #f8f9fa !important;              /* Light text color */
+    padding-bottom: 3rem !important;        /* Bottom padding */
+    border-radius: 8px;                     /* Rounded corners */
+    padding: 20px 40px;                     /* Padding around the content */
+    
+  }
+
+.btn-email {
+        display: block !important;               /* Block display for full-width */
+        font-weight: 400;
+        color: #f8f9fa;                          /* Light text color */
+        text-align: center;
+        user-select: none;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;               /* Light border color */
+        padding: 0.25rem 0.5rem;                 /* Small button padding */
+        font-size: 0.875rem;                     /* Small font size */
+        line-height: 1.5;
+        border-radius: 0.2rem;                   /* Small border radius */
+        margin-top: 1rem !important;             /* Top margin (mt-3) */
+        margin-left: auto !important;            /* Center horizontally */
+        margin-right: auto !important;
+        width: 150px;                            /* Fixed width */
+    
+      }
