@@ -15,23 +15,22 @@
 
     Use at least 1 ID selector
     - bootstrap email form #emailformcontainer
-    - 
+    - created my own id with #checkerboard
 
 ###Select at Least Three Additional Techniques:
 
     Different background colors
-    - added background variation
+    - created the #checkerboard id to create an interesting background for the page
 
     Different font colors
-
-    Positioning
+    - Different off white and dark gray text colors
 
     Opacity
     - linear gradient on header and footer containers
+    - Added linear gradient in text containers to help contrast
 
     Text Alignment
     - used justify-content-center and text-center
 
     Borders
-
-    And more (feel free to experiment!)
+    - created a custom border for the portrait 
