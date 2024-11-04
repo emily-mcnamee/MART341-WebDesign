@@ -7,7 +7,7 @@
 
     Create a page with an external CSS style sheet
 
-    - check <u>mainstyle.css</u> for updated classes 
+    - check mainstyle.css for updated classes 
 
     Use at least 1 class selector
     - broke down multiple bootstrap custom classes to create one singular custom class for the containers
