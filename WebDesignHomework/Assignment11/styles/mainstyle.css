@@ -1,0 +1,70 @@
+
+:root {
+    --light-green: #00AB86;
+    --light-cream: #F7F9DA;
+    --dark-green-text: #002C3E;
+    --dark-gray-text: #333333;
+  }
+  
+  body, html {
+    background-color: var(--light-cream);
+    color: var(--dark-green-text);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+.headerColor{
+  color: var(--light-cream);
+  background-color: var(--dark-green-text)
+}
+  
+  @font-face {
+    font-family: 'Italianno';
+    src: url('../fonts/Italianno-Regular.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    }
+
+.z-index-two{
+  position: relative;
+  z-index: 2; 
+}
+
+.crimson-pro-light {
+  font-family: 'Crimson Pro', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.customBreak {
+  /* Custom hr break */
+  border-top: 5px solid rgb(248, 250, 255); 
+  width: 100%; 
+  margin: 10px auto -5px;
+  position: relative;
+}
+
+.buffered-background {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  min-height: 100%;
+  background-color: rgb(255, 247, 247, 0.4); /* Adjust color and opacity here */
+  z-index: 1; /* Place it behind the main content */ 
+}
+
+.border-custom-blue {
+  border: 2px solid #002C3E; /* Replace #007bff with your desired color */
+}
+
+h1 {font-family: Arial, Helvetica, sans-serif ;font-style: normal; font-size: 6vh}
+h2 {font-family: 'Italianno', serif; font-style: normal; font-size: 5rem;}
+h3 {font-family:'crimson-pro-light';font-style: normal; font-size: 2rem; padding-top: 10px; text-decoration: underline;}
+p {font-family: Arial, Helvetica, sans-serif; font-style: normal; font-size: 1.6rem;} 
+
+.introtext {
+  font-size: 1.2rem;
+}
