@@ -2,7 +2,6 @@
     color: #E0E0E0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal; 
-    text-align: center !important;
 }
     
 p {
@@ -29,7 +28,7 @@ p {
 
 .customBreak {
     /* Custom hr break */
-    border-top: 2px solid #fff; 
+    border-top: 2px solid #cacaca; 
     width: 80%; 
     margin: 5px auto 10px;
     opacity: 0.9; 
@@ -37,6 +36,17 @@ p {
     z-index: 1; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.tienne-regular {
+  font-family: "Tienne", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
 
 /* Trying to DRY my styling by combining the custom bootstrap classes into single use custom classes */
 /* Bootstrap styles .bg-dark, .bg-gradient, and .btn-outline-light would only function outside of the custom class 
@@ -111,6 +121,20 @@ p {
     border-width: 4px;
     border-radius: 0.50rem;
     width: 280px;
+}
+
+.customimg {
+  border-style: solid;
+  border-color: #c2c2c2;
+  border-width: 4px;
+  border-radius: 0.50rem;
+}
+
+.Rmargin{
+  margin-right: 8%;
+}
+.Lmargin{
+  margin-left: 8%;
 }
 
 .text-container {

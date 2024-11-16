@@ -8,14 +8,18 @@
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
     <!--Website's Customized Style Sheet-->
     <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
-        
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne&display=swap" rel="stylesheet">
+    
   </head>
 
   <body>
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Quinn's Art Blog</a>
+        <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,33 +49,32 @@
     <!--Image Gallery-->  
        
     <div class="myHeader bg-dark bg-gradient">
-      <h1 class="mb-0">2023 Gallery</h1>
+      <h1 class="mb-0 text-center tienne-regular">2023 Gallery</h1>
     </div> 
 
-    <figure class="figure mt-4" style="margin-left:100px;">
-      <img src="./images/AxolotlsWeb.jpg" alt="Digital Illustration of a pink Axolotl swimming underwater." class="figure-img img-fluid border border-white border-5 rounded" style="float:left; margin-left:10px;" width="" >
-      <figcaption class="figure-caption">"Axolotls (2023)". 1100px X 1089px, Emily McNamee, <i>Procreate</i>"</figcaption>
-    </figure>
 
-    <figure class="figure mt-4" style="float:right; margin-right:100px;">
-      <img src="./images/TimeWeb.jpg" alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them." class="figure-img img-fluid border border-white border-5 rounded" width="" >
-      <figcaption class="figure-caption">"Time (2023). 1280px X 1280px, Emily McNamee,  <i>IbisPaintX</i>" </figcaption>
-    </figure>
+   <div class="container-fluid overflow-hidden text-center"> 
+      <div class="row gy-5 align-items-center text-center">
 
-    <br>
-    <br>
+        <div class="col-lg-6 p-3">
+          <img src="./images/AxolotlsWeb2.jpg" class="customimg  Lmargin" alt="Digital Illustration of a pink Axolotl swimming underwater." >
+        </div>
 
-    <figure class="figure" style="margin-left:100px;">
-      <img src="./images/UpDownWeb.jpg" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them." class="figure-img img-fluid border border-white border-5 rounded" style="float:left; margin-left:10px;" width="" >
-      <figcaption class="figure-caption">"Updown (2023). 2560px X 2560px, Emily McNamee,  <i>Procreate</i> "</figcaption>
-    </figure>
+        <div class="col-lg-6 p-3">
+          <img src="./images/TimWeb2.jpg" class="customimg  Rmargin" alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them.">
+        </div>
 
-    <figure class="figure"style="float:right; margin-right:100px;">
-      <img src="./images/OcWeb.jpg" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious." class="figure-img img-fluid border border-white border-5 rounded" width="" >
-      <figcaption class="figure-caption">"Solveig (2023). 1122px X 1149px, Emily McNamee, <i>IbisPaintX</i> "</figcaption>
-    </figure>
+        <div class="col-lg-6 p-3">
+          <img src="./images/UpDownWeb2.jpg" class="customimg  Lmargin" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them.">
+        </div>
 
-    <hr />
+        <div class="col-lg-6 p-3">
+          <img src="./images/OcWeb2.jpg" class="customimg  Rmargin" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious." >
+        </div>
+      </div>
+    </div> 
+
+    <hr class="customBreak">
 
 
     <br>
@@ -100,9 +103,6 @@
 
       <br>
 
-      <hr />
-
-      <br>
       <!--Email Form-->
     <form>
       <div class="myEmailForm bg-dark bg-gradient"  id="emailformcontainer">
