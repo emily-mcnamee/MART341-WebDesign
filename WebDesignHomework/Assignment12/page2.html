@@ -44,9 +44,9 @@
 
     <!--Image Gallery-->  
        
-     <div style="height: 100px;">
-      <h1 class="mh-100 text-center bg-black bg-gradient p-4 m" style="height: 100%;">2023 Gallery</h1>
-     </div> 
+    <div class="myHeader bg-dark bg-gradient">
+      <h1 class="mb-0">2023 Gallery</h1>
+    </div> 
 
     <figure class="figure mt-4" style="margin-left:100px;">
       <img src="./images/AxolotlsWeb.jpg" alt="Digital Illustration of a pink Axolotl swimming underwater." class="figure-img img-fluid border border-white border-5 rounded" style="float:left; margin-left:10px;" width="" >
@@ -98,34 +98,39 @@
       </div>
     </form>
 
-    <br>
+      <br>
 
-    <hr />
+      <hr />
 
-    <br>
-    <!--Email Form-->
+      <br>
+      <!--Email Form-->
     <form>
-      <div class="container">
+      <div class="myEmailForm bg-dark bg-gradient"  id="emailformcontainer">
+
+        <hr class="customBreak">
+          <br>
         <div class="row justify-content-center">
-          <div class="col-md-9">
-            <h4 class="text-center">Want to Know when New Galleries are Available?</h4><br>
-            <div class="form-group w-50 mx-auto">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else. <br>
-                By clicking 'Subscribe' you are agreeing to receive auto-reply emails of our gallery updates.</small>
+          <div class="col-md-6 col-lg-4 p-3">
+            <h5 class="mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="small"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br />
+                By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+              </small>
             </div>
           </div>
-        </div>  
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-email">
+        Subscribe
+        </button>
       </div>
-      <br>
-      <button type="submit" class="btn btn-outline-primary d-grid gap-2 col-3 mx-auto">Subscribe</button>
     </form>
 
+    <!--End of Email Form-->
     
-    <br>
-    
-    <br>
-
   </body>
 </html>

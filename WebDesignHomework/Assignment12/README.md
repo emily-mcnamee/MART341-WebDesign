@@ -1,6 +1,6 @@
 # HTML Page For this Project: 'Quinn's Art Gallery' Page 2 (Assignment 7 page2.html)
 
-## Copied over Assignment 10's index.html and mainstyle.css to carry over custom classes and help unify the two pages' looks 
+### Copied over Assignment 10's index.html and mainstyle.css to carry over custom classes and help unify the two pages' looks 
 
 
 ### Techniques Used:
