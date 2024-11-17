@@ -26,6 +26,38 @@ p {
     text-align: center;
     }
 
+.containermove{
+  position: relative;
+  top: 6em;
+}    
+
+.containermove2{
+  position: relative;
+  top: 3em;
+}    
+
+.containermove3{
+  position: relative;
+  top: 6em;
+}    
+
+.containermove4{
+  position: relative;
+  top: 10rem;
+}    
+
+.containermovefirst{
+  position: relative;
+  top: 2rem;
+}    
+
+.imgcaption{
+  font-family: Helvetica;
+  font-style: italic;
+  margin-right: 15em;
+  font-size: 15px;
+  color: #d6d6d6b6
+}
 .customBreak {
     /* Custom hr break */
     border-top: 2px solid #cacaca; 
@@ -95,23 +127,23 @@ h1 {
   }
 
 .btn-email {
-        display: block !important;               /* Block display for full-width */
-        font-weight: 400;
-        color: #f8f9fa;                          /* Light text color */
-        text-align: center;
-        user-select: none;
-        background-color: transparent;
-        border: 1px solid #f8f9fa;               /* Light border color */
-        padding: 0.25rem 0.5rem;                 /* Small button padding */
-        font-size: 0.875rem;                     /* Small font size */
-        line-height: 1.5;
-        border-radius: 0.2rem;                   /* Small border radius */
-        margin-top: 1rem !important;             /* Top margin (mt-3) */
-        margin-left: auto !important;            /* Center horizontally */
-        margin-right: auto !important;
-        width: 150px;                            /* Fixed width */
-    
-      }
+    display: block !important;               /* Block display for full-width */
+    font-weight: 400;
+    color: #f8f9fa;                          /* Light text color */
+    text-align: center;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;               /* Light border color */
+    padding: 0.25rem 0.5rem;                 /* Small button padding */
+    font-size: 0.875rem;                     /* Small font size */
+    line-height: 1.5;
+    border-radius: 0.2rem;                   /* Small border radius */
+    margin-top: 1rem !important;             /* Top margin (mt-3) */
+    margin-left: auto !important;            /* Center horizontally */
+    margin-right: auto !important;
+    width: 150px;                            /* Fixed width */
+
+  }
 
 .customBorder {
     max-width: 100%;
@@ -124,10 +156,11 @@ h1 {
 }
 
 .customimg {
-  border-style: solid;
-  border-color: #c2c2c2;
-  border-width: 4px;
+  border-style: outset;
+  border-color: #faf5ca;
+  border-width: 13px;
   border-radius: 0.50rem;
+
 }
 
 .Rmargin{
