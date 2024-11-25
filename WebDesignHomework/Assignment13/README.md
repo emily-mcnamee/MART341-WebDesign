@@ -44,16 +44,16 @@ Website: Quinn's Art Gallery
 
     - Both page2/page3 given media query to remove custom margin spacing when on smaller screens:
        <br> @media only screen and (max-width: 600px){
-       <br>  .containermove{
-       <br>  top: 0rem;}
-       <br>.containermovefirst{
-       <br>top: 0rem;}
-       <br> .containermove2{
-       <br>top: 0rem;}
-       <br>.containermove3{
-       <br>top: 0rem;}
-       <br>.containermove4{
-       <br>top: 0rem;}
+       <br>  .containermove
+       <br>  {top: 0rem;}
+       <br>.containermovefirst
+       <br>{top: 0rem;}
+       <br> .containermove2
+       <br>{top: 0rem;}
+       <br>.containermove3
+       <br>{top: 0rem;}
+       <br>.containermove4
+       <br>{top: 0rem;}
         <br>}
 
 * <b>Index.html's</b> <i>Programs Used</i> container classes changed to 'list-group-horizontal-md flex-md-row flex-column' :
