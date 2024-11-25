@@ -43,23 +43,18 @@ Website: Quinn's Art Gallery
     - All gallery images added class 'img-fluid' so they respond correctly to mobile screens
 
     - Both page2/page3 given media query to remove custom margin spacing when on smaller screens:
-        @media only screen and (max-width: 600px){
-            .containermove{
-            top: 0rem;
-            }
-            .containermovefirst{
-            top: 0rem;
-            }
-            .containermove2{
-            top: 0rem;
-            }
-            .containermove3{
-            top: 0rem;
-            }
-            .containermove4{
-            top: 0rem;
-            }
-        }
+       <br> @media only screen and (max-width: 600px){
+       <br>  .containermove
+       <br>  {top: 0rem;}
+       <br>.containermovefirst
+       <br>{top: 0rem;}
+       <br> .containermove2
+       <br>{top: 0rem;}
+       <br>.containermove3
+       <br>{top: 0rem;}
+       <br>.containermove4
+       <br>{top: 0rem;}
+        <br>}
 
 * <b>Index.html's</b> <i>Programs Used</i> container classes changed to 'list-group-horizontal-md flex-md-row flex-column' :
 
@@ -73,7 +68,7 @@ Website: Quinn's Art Gallery
 
     - The problem was multiple nested 'collapse nav-collapse' classes that confused the webpage into not responding
 
-    - Navigation coding changed from 'navbar-expand-lg' to 'navbar-expand-md' so that the navigation bar only displayed horizontally on medium to large screens (desktop and screens &#8805;800px)
+    - Navigation coding changed from 'navbar-expand-lg' to 'navbar-expand-md' so that the navigation bar only displayed horizontally on medium to large screens (desktop and screens &le;800px)
 
 ### Dropdown Menu:
 
