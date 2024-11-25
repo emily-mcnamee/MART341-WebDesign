@@ -3,6 +3,10 @@
 
 
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webpage for Emily McNamee's art and blog">
+    <meta name="author" content="Emily 'Quinn' McNamee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2023 Art</title>
      <!--This Webpage uses Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
@@ -15,40 +19,58 @@
     
   </head>
 
+  <style>
+    @media only screen and (max-width: 600px){
+     .containermove{
+       top: 0rem;
+     }
+     .containermovefirst{
+       top: 0rem;
+     }
+     .containermove2{
+       top: 0rem;
+     }
+     .containermove3{
+       top: 0rem;
+     }
+     .containermove4{
+       top: 0rem;
+     }
+   }
+   </style>
   <body>
     <!--Navigation Bar-->
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Galleries
-                </a>
-                <ul class="dropdown-menu">
+              </a>
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./page2.html">2023</a></li>
                 <li><a class="dropdown-item" href="./page3.html">2024</a></li>
                 <li><a class="dropdown-item" href="./mmediaProjects.html">Multi-Media</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!--End of Navigation Bar-->
 
     <!--Image Gallery-->  
@@ -58,30 +80,32 @@
     </div> 
 
 
-   <div class="container-fluid text-center"> 
+    <div class="container-fluid"> 
       <div class="row gy-5 align-items-center text-center">
-
-        <div class="col-lg-6 p-3 containermovefirst">
-          <img src="./images/AxolotlsWeb2.jpg" class="customimg Lmargin" alt="Digital Illustration of a pink Axolotl swimming underwater." >
-        <p class="imgcaption" style="margin-left: 7.2em;">"Axolotls (2023)". 1100px X 1089px, Emily McNamee, Procreate"</p>
+    
+        <div class="col-sm-6 p-3 containermovefirst">
+          <img src="./images/AxolotlsWeb2.jpg" class="customimg img-fluid" alt="Digital Illustration of a pink Axolotl swimming underwater.">
+          <p class="imgcaption">"Axolotls (2023)". 1100px X 1089px, Emily McNamee, Procreate"</p>
         </div>
-
-        <div class="col-lg-6 p-3 containermove">
-          <img src="./images/TimWeb2.jpg" class="customimg Rmargin " ;alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them.">
-           <p class="imgcaption">"Time (2023). 1280px X 1280px, Emily McNamee, IbisPaintX"</p>
+    
+        <div class="col-sm-6 p-3 containermove">
+          <img src="./images/TimWeb2.jpg" class="customimg img-fluid" alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them.">
+          <p class="imgcaption">"Time (2023). 1280px X 1280px, Emily McNamee, IbisPaintX"</p>
         </div>
-
-        <div class="col-lg-6 p-3  containermove2">
-          <img src="./images/UpDownWeb2.jpg" class="customimg Lmargin" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them.">
-          <p class="imgcaption" style="margin-left: 7.5em;">"Updown (2023). 2560px X 2560px, Emily McNamee, Procreate"</p>
+    
+        <div class="col-sm-6 p-3">
+          <img src="./images/UpDownWeb2.jpg containermove2" class="customimg img-fluid" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them.">
+          <p class="imgcaption">"Updown (2023). 2560px X 2560px, Emily McNamee, Procreate"</p>
         </div>
-
-        <div class="col-lg-6 p-3 containermove3">
-          <img src="./images/OcWeb2.jpg" class="customimg  Rmargin" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious." >
+    
+        <div class="col-sm-6 p-3">
+          <img src="./images/OcWeb2.jpg" class="customimg img-fluid containermove3" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious.">
           <p class="imgcaption">"Solveig (2023). 1122px X 1149px, Emily McNamee, IbisPaintX"</p>
         </div>
+    
       </div>
-    </div> 
+    </div>
+    
 
     <hr class="customBreak containermove4">
 
@@ -114,31 +138,30 @@
 
       <!--Email Form-->
     <form>
-      <div class="myEmailForm bg-dark bg-gradient containermove4"" id="emailformcontainer">
-
+      <div class="myEmailForm bg-dark bg-gradient text-center containermove4" id="emailformcontainer">
         <hr class="customBreak">
-          <br>
+        <br>
         <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4 p-3">
-            <h5 class="mb-3" style="text-align: center;"><strong>Stay Updated on New Galleries</strong></h5>
-
+          <div class="col-md-6 col-md-4 p-3">
+            <h5 class="mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+    
             <div class="form-group">
-              <label for="exampleInputEmail1" class="small"  style="text-align: center;"><strong>Email address</strong></label>
-              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-
-              <small id="emailHelp" class="form-text text-muted mt-1" style="text-align: center;">
-                <strong>We’ll never share your email. <br />
+              <label for="exampleInputEmail1" class="small d-block"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="max-width: 300px;">
+    
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br>
                 By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
               </small>
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-light btn-email">
-        Subscribe
+        <button type="submit" class="btn btn-outline-light btn-email mt-3">
+          Subscribe
         </button>
       </div>
     </form>
-
+      
     <!--End of Email Form-->
 
   </body>

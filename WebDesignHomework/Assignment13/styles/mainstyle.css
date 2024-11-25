@@ -9,6 +9,11 @@ p {
     font-size: 23px;
 }
 
+body{
+  min-height: 100vh;
+  width: 100%;
+}
+
 /* Page background */
 
 #checkerboard {
@@ -54,8 +59,7 @@ p {
 .imgcaption{
   font-family: Helvetica;
   font-style: italic;
-  margin-right: 15em;
-  font-size: 15px;
+  font-size: 1em;
   color: #d6d6d6b6
 }
 .customBreak {
@@ -67,6 +71,17 @@ p {
     position: relative;
     z-index: 1; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.customBreakalt {
+  /* Custom hr break */
+  border-top: 2px solid #cacaca; 
+  width: 80%; 
+  margin: 5px auto 10px;
+  opacity: 0.9; 
+  position: relative;
+  z-index: 1; 
+  padding-top: 1em;
 }
 
 .tienne-regular {
@@ -93,7 +108,7 @@ h1 {
     margin-right: auto;
     margin-left: auto;
 
-    color: #e1e1e1 !important;
+
 
     /* Styles from d-flex */
     display: flex !important;
@@ -106,7 +121,7 @@ h1 {
 
     /* Additional styling */
     min-height: 100px; 
-    height: 20vh; 
+    height: 25vh; 
     padding: 20px; 
     border-radius: 8px;
       
@@ -160,14 +175,10 @@ h1 {
   border-color: #faf5ca;
   border-width: 13px;
   border-radius: 0.50rem;
-
 }
 
 .Rmargin{
   margin-right: 8%;
-}
-.Lmargin{
-  margin-left: 8%;
 }
 
 .text-container {

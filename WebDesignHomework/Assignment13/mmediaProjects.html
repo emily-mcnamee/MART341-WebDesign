@@ -14,6 +14,11 @@
 
     <!--Website's Customized Style Sheet-->
     <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
+       <!--Tienne font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne&display=swap" rel="stylesheet">
+
 
     
   <style>
@@ -28,46 +33,45 @@
   </head>
 
   <body>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!--Start of Navigation Bar-->
+    <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-          <a class="navbar-brand" href="#">Quinn's Art Blog</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact Me</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Galleries
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./page2.html">2023</a></li>
-                      <li><a class="dropdown-item" href="./page3.html">2024</a></li>
-                      <li><a class="dropdown-item" href="./mmediaProjects.html">Multi-Media</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div>
-          </nav>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Galleries
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./page2.html">2023</a></li>
+                <li><a class="dropdown-item" href="./page3.html">2024</a></li>
+                <li><a class="dropdown-item" href="./mmediaProjects.html">Multi-Media</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
-    <span class="text-center" data-bs-theme="dark">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--End of Navigation Bar-->
+    
+    <span class="text-center">
 
-    <div class="container-fluid bg-dark bg-gradient text-light d-flex flex-column justify-content-center" 
-    style="min-height: 100px; height: 20vh; padding: 20px; border-radius: 8px;">
-      <h1 class="text-center mb-0">Audio and Multi-Media</h1>
-    </div>
+      <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
+        <h1 class="mb-0 text-center tienne-regular" >Multi-Media</h1>
+      </div> 
+  
 
       <br>
       <br>
@@ -200,26 +204,27 @@
         z-index: 1; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
 
+ <!--Email Form-->
+    <form>
+      <div class="myEmailForm bg-dark bg-gradient text-center" id="emailformcontainer">
+        <hr class="customBreak">
+        <br>
         <div class="row justify-content-center">
-          <div class="col-md-6 col-lg-4 p-3">
-            <h5 class="text-center mb-3"><strong>Stay Updated on New Galleries</strong></h5>
-    
+          <div class="col-md-6 col-md-4 p-3">
+            <h5 class="mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+
             <div class="form-group">
-              <label for="exampleInputEmail1" class="small"><strong>Email address</strong></label>
-              <input type="email" class="form-control form-control-sm" 
-                     id="exampleInputEmail1" 
-                     aria-describedby="emailHelp" 
-                     placeholder="Enter email">
-    
+              <label for="exampleInputEmail1" class="small d-block"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="max-width: 300px;">
+
               <small id="emailHelp" class="form-text text-muted mt-1">
-                <strong>We’ll never share your email. <br />
+                <strong>We’ll never share your email. <br>
                 By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
               </small>
             </div>
           </div>
         </div>
-        <button type="submit" class="btn btn-outline-light btn-sm d-block mx-auto mt-3" 
-                style="width: 150px;">
+        <button type="submit" class="btn btn-outline-light btn-email mt-3">
           Subscribe
         </button>
       </div>

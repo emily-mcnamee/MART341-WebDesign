@@ -1,37 +1,80 @@
 Website: Quinn's Art Gallery
 
-### The Four Pages:
+### The Four Pages (+design updates not related to A13):
 
-* Home
-* Contact Me
-* Gallery 2023
-* Gallery 2024
-* Multi-media page 
-    - received small adjustments but was not the main focus of this assignment
+* Home (index.html Assignment 12)
+
+* Contact Me (contact.html Assignment 7)
+
+    - Design overhaul for the discussion this week (check custom 'formstyle.css' linked to contact.html)
+
+* Gallery 2023 (page2.html Assignment 12)
+
+* Gallery 2024 (page3.html Assignment 8)
+
+    - Design updated to fit Assignment 12 2023 Gallery
+
+* Multi-media Projects (mmediaProjects.html Assignment 8)
+    - Received small upadates to email form and navigation bar but was not the main focus of this assignment - showed responsiveness to smaller screen ratios
 
 ### Responsive Design
+
 * Website has been edited to responsively size and position itself best to fit the screen size of the viewer 
 (check mainstyle.css for custom class editing)
+
+#### Key Problems noticed about Website:
+
+   - Navigation Bar is not functional on smaller screens
+
+   - 2024 Gallery's design is poorly responsive to smaller screens
+
+   - Assignment 12 2023 Gallery design responds incorrectly to smaller screens, minimizing the size of the webpage instead of making it more visible
+
+   - About Me Page's "Programs Used" section overflows on smaller screens
  
 ### Media Queries
 
 * Bootstrap CSS is formatted with mobile-viewing in the forefront, and their <b>container</b> div classes used to implement bootstrap coding is also formatted with mobile viewing in mind. Here are the changes I made to the containers themselves so that they fit for three different screen sizes (desktop, mobile, and tablet):
 
-    - CSS class <b>container-sm</b> will keep the media inside 100% width until a minimum breakpoint, or screen pixel size, is reached. 
+    - mmediaProjects.html video ratio changed from 16x9 to 4x3
 
-    - I set all of the media to container-small over bootstrap's other container size customizations to ensure that the same galleries can be viewed relatively the same way no matter the size of the screen. 
+    - Assigment 12 Gallery 2023 updated to add missing metadata and viewport sizes
 
-    - Email buttons' size have been increased to maximize mobile accessibility
+    - All gallery images added class 'img-fluid' so they respond correctly to mobile screens
 
-    - Multi-media video ratio's changed from 16x9 to 4x3
+    - Both page2/page3 given media query to remove custom margin spacing when on smaller screens:
+        @media only screen and (max-width: 600px){
+            .containermove{
+            top: 0rem;
+            }
+            .containermovefirst{
+            top: 0rem;
+            }
+            .containermove2{
+            top: 0rem;
+            }
+            .containermove3{
+            top: 0rem;
+            }
+            .containermove4{
+            top: 0rem;
+            }
+        }
+
+* <b>Index.html's</b> <i>Programs Used</i> container classes changed to 'list-group-horizontal-md flex-md-row flex-column' :
+
+    - list-group-horizontal-md: Makes the list horizontal starting at medium (desktop) breakpoints.
+
+    - flex-md-row flex-column: Ensures items are in a row on larger screens and stack vertically on smaller screens.
 
 ### Navigation Menu:
-* Art Gallery's Navigation bar has been edited to be more user-friendly
 
-    - Switched position to <b>sticky</b> over fixed
+* Fixed Navigation Bar coding so that it's responsive on mobile (created hamburger menu for all items)
 
-    - Enlarged the text of the navigation bar
+    - The problem was multiple nested 'collapse nav-collapse' classes that confused the webpage into not responding
 
-### Dropdown Menu
+    - Navigation coding changed from 'navbar-expand-lg' to 'navbar-expand-md' so that the navigation bar only displayed horizontally on medium to large screens (desktop and screens &#8805;800px)
 
-* As I've already implemented a Dropdown option for the Galleries, I've simply added the Multi-media page to the dropdown and a disabled *2025* Gallery as an additional dropdown item.
+### Dropdown Menu:
+
+* As I've already implemented a Dropdown option for the Galleries, I've simply added the Multi-media page to the dropdown and ensured that the dropdown was still responsive to smaller screens
