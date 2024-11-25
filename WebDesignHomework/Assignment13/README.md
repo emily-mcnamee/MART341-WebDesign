@@ -73,7 +73,7 @@ Website: Quinn's Art Gallery
 
     - The problem was multiple nested 'collapse nav-collapse' classes that confused the webpage into not responding
 
-    - Navigation coding changed from 'navbar-expand-lg' to 'navbar-expand-md' so that the navigation bar only displayed horizontally on medium to large screens (desktop and screens &#8805;800px)
+    - Navigation coding changed from 'navbar-expand-lg' to 'navbar-expand-md' so that the navigation bar only displayed horizontally on medium to large screens (desktop and screens &le;800px)
 
 ### Dropdown Menu:
 
