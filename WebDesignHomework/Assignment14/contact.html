@@ -29,6 +29,28 @@
       *{ 
       text-align: center !important;
       }
+
+      body, html {
+      margin: 0;
+      padding: 0;
+      }
+
+      canvas {
+        position: fixed;
+        top: 0;
+        height: 100vh; /* Full viewport height */
+      }
+
+      #myCanvas {
+      left: 0; /* First canvas on the left */
+      }
+
+      #myCanvasMirror {
+      right: 0; /* Second canvas on the right */
+      transform: scaleX(-1); /* Mirror the canvas horizontally */
+      z-index: -1 !important;
+      }
+      
     </style>
   </head>
 
@@ -68,15 +90,22 @@
 
     <!--End of Navigation Bar-->
 
+
+
     <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
       <h1 class="mb-0 text-center tienne-regular" >Contact Me</h1>
     </div> 
 
     <br>
 
+    <div class="canvasContainer" style="position: relative; z-index: -1;">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <script src="./styles/js/mainjsalt.js"></script>
+
     <hr class="customBreakalt" />
 
-    <div class="container">
+    <div class="container" style="position: relative; z-index: 2;">
       <div class="content">
         <div class="left-side">
           <div class="address details">
@@ -115,7 +144,8 @@
         </div>
       </div>
     </div>
-    </div>
+  </div>
+
 
     <br>
 

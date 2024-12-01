@@ -22,12 +22,36 @@
 
     
   <style>
+
     .video-container {
       padding-top: 50px;
     }
+
     .bg-custom {
     background-color: #2d2f33;  /* Dark gray */
-  }
+    }
+
+    body, html {
+    margin: 0;
+    padding: 0;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      height: 100vh; /* Full viewport height */
+    }
+
+    #myCanvas {
+    left: 0; /* First canvas on the left */
+    }
+
+    #myCanvasMirror {
+    right: 0; /* Second canvas on the right */
+    transform: scaleX(-1); /* Mirror the canvas horizontally */
+    z-index: -1 !important;
+    }
+
   </style>
 
   </head>
@@ -71,6 +95,11 @@
       <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
         <h1 class="mb-0 text-center tienne-regular" >Multi-Media</h1>
       </div> 
+
+      <div class="canvasContainer" style="position: relative; z-index: -1;">
+        <canvas id="myCanvas"></canvas>
+      </div>
+      <script src="./styles/js/mainjsalt.js"></script>
   
 
       <br>

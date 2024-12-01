@@ -94,6 +94,13 @@ h1 {
   font-size: 3em;
 }
 
+.canvasContainer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: -2;
+}
+
 
 /* Trying to DRY my styling by combining the custom bootstrap classes into single use custom classes */
 /* Bootstrap styles .bg-dark, .bg-gradient, and .btn-outline-light would only function outside of the custom class 

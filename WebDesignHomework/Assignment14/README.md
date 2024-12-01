@@ -1,13 +1,36 @@
-## Webpage for Assignment 14: Quinn Art Gallery
+## Webpage for Assignment 14: Quinn's Art Gallery
 
-### Task Requirements:
-- 3+ Pages
-- Framework Integration 
-    * Bootstrap already incorperated into website
+## Task Requirements:
 
-- Framework Styling Elements 
-    * Website fully customized using Bootstrap css classes
+### 3+ Pages
 
-- HTML5 Canvas – Include an HTML5 canvas element to display custom graphics or animations.
+* Pages modified:
+    - index.html
+    - contact.html
+    - mmediaProject.html
 
-- JavaScript Functionality – Add JavaScript to enhance interactivity or perform dynamic actions on the site.
+### Framework Integration 
+* Bootstrap already incorperated into website
+
+### Framework Styling Elements 
+* Website fully customized using Bootstrap css classes
+
+### HTML5 Canvas 
+
+* Added 'myCanvas' <div>
+
+* Added HTML Graphic Canvas to:
+    - index.html
+    - contact.html
+    - mmediaProjects.html
+
+* Check affected pages <style> for:
+    - canvas
+    - #MyCanvas
+    - #MyCanvasMirror
+    
+### JavaScript Functionality 
+
+* See custom js file 'mainjsalt.js' within ./styles/js folder to find 'myCanvas' js script
+
+* Canvas Js scripted to resize itself for mobile accessibility
