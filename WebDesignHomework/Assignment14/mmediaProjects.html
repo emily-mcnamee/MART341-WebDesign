@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US" data-bs-theme="dark">
+
+  <head>
+    <!-- metadata for page -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Webpage for Emily McNamee's art and blog">
+    <meta name="author" content="Emily 'Quinn' McNamee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Media</title>
+
+    <!--This Webpage uses Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
+
+    <!--Website's Customized Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
+       <!--Tienne font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne&display=swap" rel="stylesheet">
+
+
+    
+  <style>
+    .video-container {
+      padding-top: 50px;
+    }
+    .bg-custom {
+    background-color: #2d2f33;  /* Dark gray */
+  }
+  </style>
+
+  </head>
+
+  <body>
+    <!--Start of Navigation Bar-->
+    <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Galleries
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./page2.html">2023</a></li>
+                <li><a class="dropdown-item" href="./page3.html">2024</a></li>
+                <li><a class="dropdown-item" href="./mmediaProjects.html">Multi-Media</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--End of Navigation Bar-->
+    
+    <span class="text-center">
+
+      <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
+        <h1 class="mb-0 text-center tienne-regular" >Multi-Media</h1>
+      </div> 
+  
+
+      <br>
+      <br>
+
+      <div class="container-fluid video-container">
+        <!-- Bootstrap Row for side-by-side alignment -->
+        <div class="row justify-content-center">
+          <!-- Video 1 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/1_laDjSRvEA" 
+                title="TouchDesigner Video 1"
+                aria-label="Video showcasing a TouchDesigner project; projecting swirling colors that move on-beat to the music"
+                aria-describedby="videoDescription"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;TouchDesigner Audio Reactive&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br>Made in TouchDesigner.</i></p>
+          </div>
+    
+          <!-- Video 2 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-16x9">
+              <iframe 
+                src="https://www.youtube.com/embed/eOwREXl17iM" 
+                title="Adobe After Effects Video 2" 
+                aria-label="Video showcasing a project made in Adobe After Effects. It advertises a fictional kids app with dogs as its teaching mascots."
+                aria-describedby="videoDescription"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;k-9 Advertisement&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br>Made in Adobe After Effects.</i></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid video-container">
+    
+        <!-- Bootstrap Row for side-by-side alignment -->
+        <div class="row justify-content-center">
+          <!-- Video 1 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-4x3">
+              <iframe 
+                src="https://www.youtube.com/embed/0E03vpxc5BM " 
+                title="Adobe After Effects Video 3"
+                aria-label="Video created in Adobe After Effects, showing an office filled with monitors displaying various people, observed by a man reclining calmly." 
+                aria-describedby="videoDescription"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;Who is watching who?&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br> Made in Adobe After Effects.</i></p>
+          </div>
+    
+          <!-- Video 2 -->
+          <div class="col-md-6 col-xl-5 mb-4">
+            <div class="ratio ratio-4x3">
+              <iframe 
+                src="https://www.youtube.com/embed/L3rTI4L45Jk" 
+                title="Adobe AFter Effects Video 4"
+                aria-label="Video created in Adobe After Effects. A simple animation of collections of three shapes reacting to the music." 
+                aria-describedby="videoDescription"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <p id="videoDescription" class="sr-only"><i>&#34;Project 01&#34; &#40;2024&#41; Emily &#34;Quinn&#34; McNamee. <br>Made in Adobe After Effects.</i></p>
+          </div>
+        </div>
+      </div>
+
+      <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px; /* Negative top margin to lift the <hr> */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */ " />
+      
+      <!--Audio Files-->
+      <div class="container audio-container">
+        <h2 class="text-center mb-4">Audio Projects</h2>
+    
+        <!-- Row to align audio players side by side -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5 mb-4">
+            <div class="card shadow-lg p-3 rounded audio-card">
+              <div class="card-body text-center">
+                <h5 class="card-title">&#34;Oscillator Smooth Lofi&#34;</h5>
+                <audio controls class="w-50 mt-3" aria-label="Audio controlled by oscillated sine waves.">
+                  <source src="./audio/MCNAMEE_Oscillator01_21102023_mixdown.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-6 col-lg-5 mb-4">
+            <div class="card shadow-lg p-3 rounded audio-card">
+              <div class="card-body text-center">
+                <h5 class="card-title">&#34;Joy of the Nords&#34;</h5>
+                <audio controls class="w-50 mt-3" aria-label="Song of drums beating into time to multiple voices of war chanting.">
+                  <source src="./audio/MCNAMEE_SoundProduction_LoopProject_06112024.wav" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+    <br>
+
+    <!--Email Form-->
+    <form>
+      <div class="container-fluid bg-dark bg-gradient text-light pb-5" 
+           id="emailformcontainer" 
+           style="border-radius: 8px; padding: 20px 40px;">
+
+        <hr style="
+        border-top: 2px solid #fff; 
+        width: 80%; 
+        margin: -15px auto 20px;  /*  */
+        opacity: 0.8; 
+        position: relative;
+        z-index: 1; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Subtle shadow for hover effect */" />
+
+ <!--Email Form-->
+    <form>
+      <div class="myEmailForm bg-dark bg-gradient text-center" id="emailformcontainer">
+        <hr class="customBreak">
+        <br>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-md-4 p-3">
+            <h5 class="mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="small d-block"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="max-width: 300px;">
+
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br>
+                By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+              </small>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-email mt-3">
+          Subscribe
+        </button>
+      </div>
+    </form>
+    <!--End of Email Form-->
+    </span>
+  </body>
+</html>

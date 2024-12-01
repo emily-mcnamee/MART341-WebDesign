@@ -1,0 +1,196 @@
+* {
+    color: #E0E0E0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal; 
+}
+    
+p {
+    color: #f3f3f3; 
+    font-size: 23px;
+}
+
+body{
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Page background */
+
+#checkerboard {
+    background-color: #575757; /* Light background color */
+    background-image: 
+      linear-gradient(45deg, #222324 25%, transparent 50%),
+      linear-gradient(-45deg, #222324 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #222324 75%),
+      linear-gradient(-45deg, transparent 75%, #222324 75%);
+    background-size: 150px 150px;
+    min-height: 100%; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    }
+
+.containermove{
+  position: relative;
+  top: 6em;
+}    
+
+.containermove2{
+  position: relative;
+  top: 3em;
+}    
+
+.containermove3{
+  position: relative;
+  top: 6em;
+}    
+
+.containermove4{
+  position: relative;
+  top: 10rem;
+}    
+
+.containermovefirst{
+  position: relative;
+  top: 2rem;
+}    
+
+.imgcaption{
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 1em;
+  color: #d6d6d6b6
+}
+.customBreak {
+    /* Custom hr break */
+    border-top: 2px solid #cacaca; 
+    width: 80%; 
+    margin: 5px auto 10px;
+    opacity: 0.9; 
+    position: relative;
+    z-index: 1; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.customBreakalt {
+  /* Custom hr break */
+  border-top: 2px solid #cacaca; 
+  width: 80%; 
+  margin: 5px auto 10px;
+  opacity: 0.9; 
+  position: relative;
+  z-index: 1; 
+  padding-top: 1em;
+}
+
+.tienne-regular {
+  font-family: "Tienne", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+
+/* Trying to DRY my styling by combining the custom bootstrap classes into single use custom classes */
+/* Bootstrap styles .bg-dark, .bg-gradient, and .btn-outline-light would only function outside of the custom class 
+    so that is why they are excluded from the mainstyle sheet */
+
+.myHeader {
+    
+    /* Styles from container-fluid */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+
+    /* Styles from d-flex */
+    display: flex !important;
+
+    /* Styles from flex-column */
+    flex-direction: column !important;
+
+    /* Styles from justify-content-center */
+    justify-content: center !important;
+
+    /* Additional styling */
+    min-height: 100px; 
+    height: 25vh; 
+    padding: 20px; 
+    border-radius: 8px;
+      
+}
+
+.myEmailForm {
+    
+    width: 100%;                           /* Full-width container */
+    padding-right: 15px;                    /* Bootstrap container padding */
+    padding-left: 15px;
+    margin-right: auto;                     /* Centered horizontally */
+    margin-left: auto;
+    color: #f8f9fa !important;              /* Light text color */
+    padding-bottom: 3rem !important;        /* Bottom padding */
+    border-radius: 8px;                     /* Rounded corners */
+    padding: 20px 40px;                     /* Padding around the content */
+    
+  }
+
+.btn-email {
+    display: block !important;               /* Block display for full-width */
+    font-weight: 400;
+    color: #f8f9fa;                          /* Light text color */
+    text-align: center;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #f8f9fa;               /* Light border color */
+    padding: 0.25rem 0.5rem;                 /* Small button padding */
+    font-size: 0.875rem;                     /* Small font size */
+    line-height: 1.5;
+    border-radius: 0.2rem;                   /* Small border radius */
+    margin-top: 1rem !important;             /* Top margin (mt-3) */
+    margin-left: auto !important;            /* Center horizontally */
+    margin-right: auto !important;
+    width: 150px;                            /* Fixed width */
+
+  }
+
+.customBorder {
+    max-width: 100%;
+    height: auto;
+    border-style: solid;
+    border-color: #c2c2c2;
+    border-width: 4px;
+    border-radius: 0.50rem;
+    width: 280px;
+}
+
+.customimg {
+  border-style: outset;
+  border-color: #faf5ca;
+  border-width: 13px;
+  border-radius: 0.50rem;
+}
+
+.Rmargin{
+  margin-right: 8%;
+}
+
+.text-container {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7) 0%, /* Darker at the top */
+      rgba(0, 0, 0, 0.5) 25% /* Lighter at the bottom */
+    );
+    padding: 20px;
+    border-radius: 8px;
+    color: rgb(209, 214, 224);
+    max-width: 79%;
+    width: 100%;
+    margin: auto;
+  }
