@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US" data-bs-theme="dark">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Webpage for Emily McNamee's art and blog">
+    <meta name="author" content="Emily 'Quinn' McNamee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 Art</title>
+     <!--This Webpage uses Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
+    <!--Website's Customized Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
+    <!--Tienne font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tienne&display=swap" rel="stylesheet">
+    
+    <style>
+    *{ 
+      text-align: center !important;
+      }
+    body, html {
+      margin: 0;
+      padding: 0;
+      }
+    canvas {
+      position: fixed;
+      top: 0;
+      height: 100vh; /* Full viewport height */
+    }
+    #myCanvas {
+      left: 0; /* First canvas on the left */
+      }
+    #myCanvasMirror {
+      right: 0; /* Second canvas on the right */
+      transform: scaleX(-1); /* Mirror the canvas horizontally */
+      z-index: -1 !important;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+    <!--Navigation Bar-->
+    <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Galleries
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./page2.html">2023</a></li>
+                <li><a class="dropdown-item" href="./page3.html">2024</a></li>
+                <li><a class="dropdown-item" href="./mmediaProjects.html">Multi-Media</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!--End of Navigation Bar-->
+
+    <!--Image Gallery-->  
+
+    <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
+      <h1 class="mb-0 text-center tienne-regular" >2023 Gallery</h1>
+    </div> 
+
+    <div class="canvasContainer" style="position: relative; z-index: -1;">
+      <canvas id="myCanvas"></canvas>
+    </div>
+    <script src="./styles/js/mainjsalt.js"></script>
+
+
+    <div class="container-fluid"> 
+      <div class="row gy-5 align-items-center text-center">
+    
+        <div class="col-sm-6 p-3">
+          <img src="./images/AxolotlsWeb.jpg" class="customimg img-fluid" alt="Digital Illustration of a pink Axolotl swimming underwater.">
+          <p class="imgcaption">"Axolotls &#40;2023&#41;". 1100px X 1089px, Emily McNamee, Procreate"</p>
+        </div>
+
+        <div class="col-sm-6 p-3">
+          <img src="./images/OcWeb.jpg" class="customimg img-fluid" alt="Digital illustration of a woman clad in armor holding a large axe in front of her. Her expression is serious.">
+          <p class="imgcaption">"Solveig &#40;2023&#41;. 1122px X 1149px, Emily McNamee, IbisPaintX"</p>
+        </div>
+
+        <div class="col-sm-6 p-3 ">
+          <img src="./images/WindWakerWeb.jpg" class="customimg img-fluid" alt="A digital illustraion of a boy excitedly gazing into the sea from the rim of a bright red boat. The boat's lion head is also turned to where the boy is looking.">
+           <p class="imgcaption">"The WindWaker &#40;2023&#41;. 2560px X 2560px, Emily McNamee, IbisPaintX"</p>
+        </div>
+
+        <div class="col-sm-6 p-3">
+          <img src="./images/UpDownWeb.jpg" class="customimg img-fluid" alt="Digital illustration of a stone-figure floating in a blue sea, with an above figure staring down at them.">
+          <p class="imgcaption">"Updown &#40;2023&#41;. 2560px X 2560px, Emily McNamee, Procreate"</p>
+        </div>
+    
+        <div class="col-sm-6 p-3">
+          <img src="./images/TimeWeb.jpg" class="customimg img-fluid" alt="Digital illustration of a small figure hanging above a large pit, clocks ticking behind them.">
+          <p class="imgcaption">"Time &#40;2023&#41;. 1280px X 1280px, Emily McNamee, IbisPaintX"</p>
+        </div>
+    
+        <div class="col-sm-6 p-3 ">
+          <img src="./images/PollutionWeb.jpg" class="customimg img-fluid" alt="A digital illustration of a spectral human skull flying above a digital Earth. Its body is encased in smoke, and the pipes atop its head are also billowing black smog.">
+          <p class="imgcaption">"Pollution &#40;2023&#41;. 1125px X 1393px, Emily McNamee, Photoshop" </p>
+        </div>
+    
+      </div>
+    </div>
+    
+
+    <hr class="customBreak">
+
+
+    <br>
+    <!--Voting Form-->
+    <form>
+      <div class="container border border-2 w-50 p-3">
+        <h3 class="text-center">Which 2023 Illustration is Your Favorite?</h3>
+        <br>
+          <div class="mx-auto text-center">
+              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option1">"Axolotls"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+              <label class="btn btn-outline-secondary" for="option2">"Solveig"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option3">"The WindWaker"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option4">"Updown"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option5">"Time"</label>
+
+              <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="option6">"Pollution"</label>
+            </div> 
+            <br>
+            <button type="submit" class="btn btn-outline-light d-grid mx-auto p-2">Submit!</button>
+      </div>
+    </form>
+
+      <br>
+
+      <!--Email Form-->
+    <form>
+      <div class="myEmailForm bg-dark bg-gradient text-center" id="emailformcontainer" style="position: relative; z-index: 2;">
+        <hr class="customBreak">
+        <br>
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-md-4 p-3">
+            <h5 class="mb-3"><strong>Stay Updated on New Galleries</strong></h5>
+    
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="small d-block"><strong>Email address</strong></label>
+              <input type="email" class="form-control form-control-sm mx-auto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="max-width: 300px;">
+    
+              <small id="emailHelp" class="form-text text-muted mt-1">
+                <strong>We’ll never share your email. <br>
+                By subscribing, you agree to receive gallery updates via auto-reply emails.</strong>
+              </small>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-outline-light btn-email mt-3">
+          Subscribe
+        </button>
+      </div>
+    </form>
+      
+    <!--End of Email Form-->
+
+  </body>
+</html>
