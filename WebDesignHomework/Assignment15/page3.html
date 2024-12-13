@@ -7,11 +7,13 @@
     <meta name="author" content="Emily 'Quinn' McNamee">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2024 Art</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
       <!--This Webpage uses Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./styles/css/bootstrap.min.css">
     <!--Website's Customized Style Sheet-->
     <link rel="stylesheet" type="text/css" href="./styles/mainstyle.css">
+
     <!--Tienne font links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +52,9 @@
     <!--Navigation Bar-->
     <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
+        <a class="navbar-brand mb-0 h1">
+          <img src="./images/favicon.ico" alt="Logo" width="40" height="40">
+          Quinn's Art Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -90,81 +94,106 @@
 
     <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
       <h1 class="mb-0 text-center tienne-regular" >2024 Gallery</h1>
-    </div> 
+    </div>
 
-    <div class="container-fluid"> 
-      <div class="row gy-5 align-items-center text-center">
+    <div class="text-containeralt">
+      <hr class="customBreakTop">
+      <hr class="customBreaktop">
 
-        <div class="col-sm-6 p-3 ">
-          <img src="./images/AutumnRatWeb.jpg" class="customimg img-fluid" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup.">
-          <p class="imgcaption">"AutumnRat &#40;2024&#41;". 1400px X 1794px, Emily McNamee, IbisPaintX"</p>
+      <div class="container-fluid"> 
+        <div class="row gy-5 align-items-center text-center">
+          <div class="col-sm-6 p-3 ">
+            <div class="image-container mx-auto">
+              <img src="./images/AutumnRatWeb.jpg" class="customimg img-fluid" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup.">
+              <div class= "image-overlay">
+                <p class="imgcaption">"AutumnRat &#40;2024&#41;". 1400px X 1794px, Emily McNamee, IbisPaintX"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 p-3 ">
+            <div class="image-container mx-auto">
+              <img src="./images/IceWallWeb.jpg" class="customimg img-fluid" alt="Large blue and green ice walls cover the landscape, a figure and their companion in the foreground looking ahead to a cave.">
+              <div class= "image-overlay">
+                <p class="imgcaption">"Frozen Globe &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 p-3 ">
+            <div class="image-container mx-auto">
+              <img src="./images/CloseUpWeb.jpg" class="customimg img-fluid" alt="Two figures are ducked close together in an snow storm, leaned up against a pillar with a colorful stain-glass imprint.">
+              <div class= "image-overlay">
+                <p class="imgcaption">"Living Campfire &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 p-3 ">
+            <div class="image-container mx-auto">
+              <img src="./images/GoddessWeb.jpg" class="customimg img-fluid" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup.">
+              <div class= "image-overlay">
+                <p class="imgcaption">"Humanity's Beacon &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 p-3 ">
+            <div class="image-container mx-auto">
+              <img src="./images/BearWeb.jpg" class="customimg img-fluid" alt="A large bear towers over a figure, its teeth bearing into thier axe handle. A figure in the distance draws their bow.">
+              <div class= "image-overlay">
+                <p class="imgcaption">"Desperate Survival &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 p-3 ">
+            <div class="image-container mx-auto">
+              <img src="./images/MonstersWeb.jpg" class="customimg img-fluid" alt="A broken figure of a human skeleton mixed with ice hobbles towards the camera, a starved and hairless beast cowering behind it.">
+              <div class= "image-overlay">
+                <p class="imgcaption">"Humanity's Starvation &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div> 
 
-        <div class="col-sm-6 p-3 ">
-          <img src="./images/IceWallWeb.jpg" class="customimg img-fluid" alt="Large blue and green ice walls cover the landscape, a figure and their companion in the foreground looking ahead to a cave.">
-          <p class="imgcaption">"Frozen Globe &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
+      <hr class="customBreak">
+      <!--Voting Form-->
+      <form>
+        <div class="container border border-2 w-50 p-3">
+          <h3 class="text-center">Which 2024 Illustration is Your Favorite?</h3>
+            <div class="mx-auto text-center">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option1">"Autumn Rat"</label>
+
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+                <label class="btn btn-outline-secondary" for="option2">"Frozen Globe"</label>
+
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option3">"Living Campfire"</label>
+
+                <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option4">"Humanity's Beacon"</label>
+
+                <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option5">"Desperate Survival"</label>
+
+                <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="option6">"Humanity's Starvation"</label>
+              </div> 
+              <br>
+              <button type="submit" class="btn btn-outline-light d-grid mx-auto p-2">Submit!</button>
         </div>
+      </form>
 
-        <div class="col-sm-6 p-3 ">
-          <img src="./images/CloseUpWeb.jpg" class="customimg img-fluid" alt="Two figures are ducked close together in an snow storm, leaned up against a pillar with a colorful stain-glass imprint.">
-          <p class="imgcaption">"Living Campfire &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
-        </div>
+      <hr class="customBreakbot">
+      <hr class="customBreakBot">
+    </div>
 
-        <div class="col-sm-6 p-3 ">
-          <img src="./images/GoddessWeb.jpg" class="customimg img-fluid" alt="A digital illustration of a content, gray mouse sitting on a small deck, in front of a house made of a pumpkin. It is holding an acorn like a cup.">
-          <p class="imgcaption">"Humanity's Beacon &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
-        </div>
-
-        <div class="col-sm-6 p-3 ">
-          <img src="./images/BearWeb.jpg" class="customimg img-fluid" alt="A large bear towers over a figure, its teeth bearing into thier axe handle. A figure in the distance draws their bow.">
-          <p class="imgcaption">"Desperate Survival &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
-        </div>
-
-        <div class="col-sm-6 p-3 ">
-          <img src="./images/MonstersWeb.jpg" class="customimg img-fluid" alt="A broken figure of a human skeleton mixed with ice hobbles towards the camera, a starved and hairless beast cowering behind it.">
-          <p class="imgcaption">"Humanity's Starvation &#40;2024&#41;". 1024px X 768px, Emily McNamee, IbisPaintX"</p>
-        </div>
-
-      </div>
-    </div> 
-
-    <hr class="customBreakalt ">
-
-    <!--Voting Form-->
-    <form>
-      <div class="container border border-2 w-50 p-3">
-        <h3 class="text-center">Which 2024 Illustration is Your Favorite?</h3>
-          <div class="mx-auto text-center">
-              <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="option1">"Autumn Rat"</label>
-
-              <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
-              <label class="btn btn-outline-secondary" for="option2">"Frozen Globe"</label>
-
-              <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="option3">"Living Campfire"</label>
-
-              <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="option4">"Humanity's Beacon"</label>
-
-              <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="option5">"Desperate Survival"</label>
-
-              <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="option6">"Humanity's Starvation"</label>
-            </div> 
-            <br>
-            <button type="submit" class="btn btn-outline-light d-grid mx-auto p-2">Submit!</button>
-      </div>
-    </form>
-
-    <br>
-
-    <br>
     <!--Email Form-->
     <form>
-      <div class="myEmailForm bg-dark bg-gradient text-center " id="emailformcontainer" style="position: relative; z-index: 2;">
-        <hr class="customBreak">
+      <div class="myEmailForm bg-dark bg-gradient-inverted text-center " id="emailformcontainer" style="position: relative; z-index: 2;">
         <br>
         <div class="row justify-content-center">
           <div class="col-md-6 col-md-4 p-3">
@@ -186,7 +215,7 @@
         </button>
       </div>
     </form>
-    
+    <!--End of Email Form-->
 
   </body>
 </html>

@@ -8,6 +8,7 @@
     <meta name="author" content="Emily 'Quinn' McNamee">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
     <!-- FontAwesome CDN-->
     <script src="https://kit.fontawesome.com/020db542ce.js" crossorigin="anonymous"></script>
@@ -51,6 +52,9 @@
     z-index: -1 !important;
     }
     
+    .myEmailForm .bg-gradient{
+      transform: ScaleX(-1);
+    }
     </style>
   </head>
 
@@ -58,7 +62,9 @@
     <!--Start of Navigation Bar-->
     <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand mb-0 h1">Quinn's Art Blog</a>
+        <a class="navbar-brand mb-0 h1">
+          <img src="./images/favicon.ico" alt="Logo" width="40" height="40">
+          Quinn's Art Blog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,24 +92,19 @@
     </nav>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    
-
     <!--End of Navigation Bar-->
-
-
 
     <div class="myHeader bg-dark bg-gradient" style="margin-top: 3rem;">
       <h1 class="mb-0 text-center tienne-regular" >Contact Me</h1>
     </div> 
-
-    <br>
 
     <div class="canvasContainer" style="position: relative; z-index: -1;">
       <canvas id="myCanvas"></canvas>
     </div>
     <script src="./styles/js/mainjsalt.js"></script>
 
-    <hr class="customBreakalt">
+    <hr class="customBreak" style="width: 90%; margin: auto auto auto ;">
+    <hr class="customBreak" style="width: 85%; margin: 0.3em auto 1em;">
 
     <div class="container" style="position: relative; z-index: 2;">
       <div class="content">
@@ -129,31 +130,28 @@
           <div class="topic-text">Send me a message!
           <p></p>
           <form action="#">
-            <div class="input-box border border-white">
-              <input type="text" placeholder="Enter your name">
-            </div>
-            <div class="input-box border border-white">
-              <input type="text" placeholder="Enter your email">
-            </div>
-            <div class="input-box message-box border border-white">
-              <textarea></textarea>
-            </div>
-            <button type="button" class="btn btn-outline-light">Send</button>
-
-          </form>
+              <div class="input-box border border-white">
+                <input type="text" placeholder="Enter your name">
+              </div>
+              <div class="input-box border border-white">
+                <input type="text" placeholder="Enter your email">
+              </div>
+              <div class="input-box message-box border border-white">
+                <textarea></textarea>
+              </div>
+              <button type="button" class="btn btn-outline-light">Send</button>
+           </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-    <br>
-
+  
+  <hr class="customBreak" style="width: 85%; margin: 1em auto 0.3em;">
+  <hr class="customBreak" style="width: 90%; margin: auto auto auto ;">
+  
     <!--Email Form-->
     <form>
-      <div class="myEmailForm bg-dark bg-gradient text-center" id="emailformcontainer">
-        <hr class="customBreak">
-        <br>
+      <div class="myEmailForm bg-dark bg-gradient-inverted text-center" id="emailformcontainer">
         <div class="row justify-content-center">
           <div class="col-md-6 col-md-4 p-3">
             <h5 class="mb-3"><strong>Stay Updated on New Galleries</strong></h5>
@@ -174,7 +172,7 @@
         </button>
       </div>
     </form>
-    
-  <!--End of Email Form-->
+    <!--End of Email Form-->
+
   </body>
 </html>

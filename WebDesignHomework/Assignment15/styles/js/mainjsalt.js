@@ -3,7 +3,7 @@ const canvas = document.getElementById("myCanvas");
 
     // Set canvas size
     function resizeCanvas() {
-        canvas.width = 60; // Fixed width
+        canvas.width = 30; // Fixed width
         canvas.height = window.innerHeight; // Full height
         drawTriangles();
     }
@@ -14,7 +14,7 @@ const canvas = document.getElementById("myCanvas");
         ctx.fillStyle = "#141414"; // Dark gray
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        const triangleHeight = 50; // Height of each triangle
+        const triangleHeight = 40; // Height of each triangle
         const triangleBase = canvas.width; // Full width
         const smallTriangleScale = 0.48; // Smaller triangles are 48% of the base width
         const smallHeightScale = 0.38; // Smaller triangles are 38% of the height
