@@ -45,7 +45,7 @@ body{
     right: -15px;
     top: 50%;
     transform: translateY(-50%);
-    background: #afafb6;
+    background: #f3f3f3;
   }
   .content .left-side .details{
     margin: 14px;
@@ -65,7 +65,7 @@ body{
   .content .left-side .details .text-one,
   .content .left-side .details .text-two{
     font-size: 14px;
-    color: #afafb6;
+    color: #f3f3f3;
   }
   
   .container .content .right-side{
